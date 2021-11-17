@@ -1,14 +1,9 @@
-using System;
-using ScriptableSystem.GameEvent;
+﻿using ScriptableSystem.GameEvent;
 using UnityEngine;
 
 namespace Architecture
 {
-    [CreateAssetMenu(
-        menuName = "Create Scenario", 
-        fileName = "Scenario", 
-        order = 120)]
-    public class Scenario : ScriptableObject
+    public class ScenarioController: MonoBehaviour
     {
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onStepChanged;
@@ -24,7 +19,12 @@ namespace Architecture
             _currentStepNumber = 0;
         }
 
-
+        private void Start()
+        {
+            _onStepLoaded.Invoke(_steps[_currentStepNumber]);
+            _onStepChanged.Invoke();
+        }
+        
         private void OnEnable()
         {
             _onStepEnded.AddAction(LoadNextStep);
@@ -35,9 +35,10 @@ namespace Architecture
             _onStepEnded.RemoveAction(LoadNextStep);
         }
 
-        private void LoadNextStep() => 
+        private void LoadNextStep()
+        {
             _currentStepNumber = (_currentStepNumber + 1) % _steps.Length;
-
-
+            _onStepLoaded.Invoke(_steps[_currentStepNumber]);
+        }
     }
 }
