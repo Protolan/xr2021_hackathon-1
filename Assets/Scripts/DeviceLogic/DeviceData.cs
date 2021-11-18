@@ -7,6 +7,7 @@ namespace DeviceLogic
     public class DeviceData
     {
         public Vector3 _scales;
+        public GameObject _washingMachine;
 
     }
 }
