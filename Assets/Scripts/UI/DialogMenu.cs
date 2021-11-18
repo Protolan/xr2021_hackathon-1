@@ -10,13 +10,14 @@ namespace UI
         [SerializeField] private TMP_Text _text;
         [SerializeField] private Image _speakerImage;
         [SerializeField] private Button _button;
+        [SerializeField] private GameObject _parentObject;
 
         protected override void LoadData(Step step)
         {
-            if (!step.ContainsFeature(StepFeature.DialogMenu)) gameObject.SetActive(false);
+            if (!step.ContainsFeature(StepFeature.DialogMenu)) _parentObject.SetActive(false);
             else
             {
-                gameObject.SetActive(true);
+                _parentObject.SetActive(true);
                 UpdateContent(step.DialogMenuData);
             }
         }

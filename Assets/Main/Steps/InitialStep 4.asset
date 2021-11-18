@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
-  m_Name: Step
+  m_Name: InitialStep 4
   m_EditorClassIdentifier: 
-  _features: 00000000
+  _features: 01000000
+  _transitions:
+  - _nextStep: {fileID: 11400000}
+    _condition: {fileID: 11400000, guid: a11fe7f6f7d1fbc4db5a5efa75dc47a4, type: 2}
   _modularMenuData:
-    _mainText: 
-    _sprite: {fileID: 0}
-    _imageText: 
+    _mainText: Hello! This is Initital Step!
+    _sprite: {fileID: 21300000, guid: 5515134bbb0515545a347aafbba91666, type: 3}
+    _imageText: "\u0412\u043E\u0442 \u044D\u0442\u043E \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0430"
     _deviceActionData:
       _devicesToChoose: []
     _features: 
   _dialogMenuData:
-    _text: 
+    _text: Great! Now we are ready!
   _voiceActingData:
     _clip: {fileID: 0}

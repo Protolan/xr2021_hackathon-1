@@ -13,14 +13,15 @@ namespace UI
         [SerializeField] private TMP_Text _imageText;
         [SerializeField] private Button _okButton;
         [SerializeField] private Button _cancelButton;
+        [SerializeField] private GameObject _parentObject;
 
 
         protected override void LoadData(Step step)
         {
-            if (!step.ContainsFeature(StepFeature.ModularMenu)) gameObject.SetActive(false);
+            if (!step.ContainsFeature(StepFeature.ModularMenu)) _parentObject.SetActive(false);
             else
             {
-                gameObject.SetActive(true);
+                _parentObject.SetActive(true);
                 UpdateContent(step.MenuData);
             }
         }
