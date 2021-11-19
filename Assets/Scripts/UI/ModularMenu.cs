@@ -22,7 +22,7 @@ namespace UI
             else
             {
                 _parentObject.SetActive(true);
-                UpdateContent(step.MenuData);
+                UpdateContent(step.GetFeatureData(StepFeature.ModularMenu) as ModularMenuData);
             }
         }
 

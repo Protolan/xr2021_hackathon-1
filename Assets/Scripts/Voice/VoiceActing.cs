@@ -15,7 +15,7 @@ namespace Voice
         private void StartActingIfHave(Step stepData)
         {
             if (stepData.ContainsFeature(StepFeature.VoiceActing)) 
-                StartActing(stepData.ActingData);
+                StartActing(stepData.GetFeatureData(StepFeature.VoiceActing) as VoiceActingData);
         }
 
         private void StartActing(VoiceActingData data)

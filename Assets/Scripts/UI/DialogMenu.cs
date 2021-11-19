@@ -18,7 +18,7 @@ namespace UI
             else
             {
                 _parentObject.SetActive(true);
-                UpdateContent(step.DialogMenuData);
+                UpdateContent(step.GetFeatureData(StepFeature.DialogMenu) as DialogMenuData);
             }
         }
 

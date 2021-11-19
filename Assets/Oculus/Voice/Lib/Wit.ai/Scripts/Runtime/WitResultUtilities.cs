@@ -6,6 +6,7 @@
  */
 
 using Facebook.WitAi.Lib;
+using UnityEngine;
 
 namespace Facebook.WitAi
 {
