@@ -30,7 +30,16 @@ namespace DeviceLogic
         }
 
 
+        private void Update()
+        {
+            if(!_isActive) return;
+            _currentBehaviour?.Invoke();
+            CheckForButtonDown();
+            CheckForButtonUp();
+        }
+
         private void OnEnable() => _onStepLoaded.AddAction(ActivateIfHave);
+        private void OnDisable() => _onStepLoaded.RemoveAction(ActivateIfHave);
 
         private void ActivateIfHave(Step stepData)
         {
@@ -63,15 +72,6 @@ namespace DeviceLogic
             _onButtonDown -= SetDevice;
             _onDrawingComplete.Invoke();
             _isActive = false;
-        }
-
-
-        private void Update()
-        {
-            if(!_isActive) return;
-            _currentBehaviour?.Invoke();
-            CheckForButtonDown();
-            CheckForButtonUp();
         }
 
 

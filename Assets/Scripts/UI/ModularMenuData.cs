@@ -17,9 +17,9 @@ namespace Architecture
         [ShowIf("@ContainsFeature(ModularMenuFeature.Image)")]
         public string _imageText;
 
-        [ShowIf("@ContainsFeature(ModularMenuFeature.ChoosingMenu)")] [SerializeField]
-        private DeviceChoosingData _deviceActionData;
-
+        [ShowIf("@ContainsFeature(ModularMenuFeature.Title)")]
+        public string _titleText;
+        
         public ModularMenuFeature[] _features = Array.Empty<ModularMenuFeature>();
 
         private bool ContainsFeature(ModularMenuFeature feature) => _features.Contains(feature);

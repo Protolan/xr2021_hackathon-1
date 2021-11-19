@@ -14,6 +14,9 @@ namespace UI
         [SerializeField] private Button _okButton;
         [SerializeField] private Button _cancelButton;
         [SerializeField] private GameObject _parentObject;
+        [SerializeField] private TMP_Text _title;
+        [SerializeField] private GameObject _twoButtonModule;
+        [SerializeField] private Button _redrawButton;
 
 
         protected override void LoadData(Step step)
@@ -33,11 +36,38 @@ namespace UI
             _imageText.gameObject.SetActive(false);
             _okButton.gameObject.SetActive(false);
             _cancelButton.gameObject.SetActive(false);
+            _redrawButton.gameObject.SetActive(false);
+            _title.gameObject.SetActive(false);
+            _twoButtonModule.gameObject.SetActive(false);
         }
 
         private void UpdateContent(ModularMenuData data)
         {
             DeactivateAll();
+            if (data._features.Contains(ModularMenuFeature.OkButton))
+            {
+                _okButton.gameObject.SetActive(true);
+            }
+            
+            if (data._features.Contains(ModularMenuFeature.Title))
+            {
+                _title.SetText(data._titleText);
+                _title.gameObject.SetActive(true);
+            }
+
+            if(data._features.Contains(ModularMenuFeature.Cancel))
+            {
+                _twoButtonModule.gameObject.SetActive(true);
+                _cancelButton.gameObject.SetActive(true);
+            }
+
+            if (data._features.Contains(ModularMenuFeature.Redraw))
+            {
+                _twoButtonModule.gameObject.SetActive(true);
+                _cancelButton.gameObject.SetActive(false);
+                _redrawButton.gameObject.SetActive(true);
+            }
+            
             if (data._features.Contains(ModularMenuFeature.Image))
             {
                 _image.sprite = data._sprite;
@@ -51,7 +81,6 @@ namespace UI
                 _mainText.gameObject.SetActive(true);
             }
             
-            _okButton.gameObject.SetActive(true);
             
         }
     }

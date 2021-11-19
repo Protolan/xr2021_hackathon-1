@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
-  m_Name: InitialStep
+  m_Name: BoundariesDrawStep
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -22,18 +22,21 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: e0734a4fcd3ac0d49b99c824e4fa3637, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0500000002000000
+  - _nextStep: {fileID: 11400000, guid: 706191683bc7add4eaf85d753715847b, type: 2}
+    _condition: {fileID: 11400000, guid: 281493a2ae4a1c7479b0b2e916495a67, type: 2}
+  _features: 0100000006000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Hold your controller, on the front edge of your washing machine, than
+      press and hold the trigger button, draw a line from one side of the item to
+      another, than release the trigger button when you finished.
     _sprite: {fileID: 0}
     _imageText: 
-    _deviceActionData:
-      _devicesToChoose: []
-    _features: 
+    _titleText: 
+    _features: 03000000
   _dialogMenuData:
-    _text: Hello!
+    _text: "\u042F \u0441\u043A\u0430\u0437\u0430\u043B, \u0434\u0432\u0435\u0440\u044C
+      \u043C\u043D\u0435 \u0437\u0430\u043F\u0438\u043B\u0438\u043B!"
+    _hasButton: 1
   _voiceActingData:
     _clip: {fileID: 0}
   _voiceListenerData:

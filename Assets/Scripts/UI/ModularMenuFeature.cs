@@ -3,7 +3,9 @@
     public enum ModularMenuFeature
     {
         Image,
-        MultiAnswer,
-        ChoosingMenu,
+        Cancel,
+        Redraw,
+        Title,
+        OkButton,
     }
 }

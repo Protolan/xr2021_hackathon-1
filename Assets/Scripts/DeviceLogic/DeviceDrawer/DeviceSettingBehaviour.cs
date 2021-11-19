@@ -21,7 +21,7 @@ namespace DeviceLogic
         private void SetDeice()
         {
             _device.transform.position = _boundaries.transform.position;
-            _device.transform.localScale = _startMachineScale * (_boundaries.transform.position.x / _aspectRatio.x);
+            _device.transform.localScale = _startMachineScale * (_boundaries.transform.localScale.x / _aspectRatio.x);
             _device.transform.rotation = _boundaries.transform.rotation;
             _device.SetActive(true);
             _boundaries.SetActive(false);

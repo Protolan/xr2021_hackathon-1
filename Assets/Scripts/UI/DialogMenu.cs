@@ -8,9 +8,9 @@ namespace UI
     public class DialogMenu : UIElement
     {
         [SerializeField] private TMP_Text _text;
-        [SerializeField] private Image _speakerImage;
         [SerializeField] private Button _button;
         [SerializeField] private GameObject _parentObject;
+                
 
         protected override void LoadData(Step step)
         {
@@ -22,6 +22,10 @@ namespace UI
             }
         }
 
-        private void UpdateContent(DialogMenuData data) => _text.SetText(data._text);
+        private void UpdateContent(DialogMenuData data)
+        {
+            _button.gameObject.SetActive(data._hasButton);
+            _text.SetText(data._text);
+        }
     }
 }

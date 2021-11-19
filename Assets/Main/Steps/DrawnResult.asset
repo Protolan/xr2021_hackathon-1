@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
+  m_Name: DrawnResult
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: f86d9494a57431e469ccf5acdb82b7f8, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  - _nextStep: {fileID: 11400000, guid: e0734a4fcd3ac0d49b99c824e4fa3637, type: 2}
+    _condition: {fileID: 11400000, guid: d90dbec23323b694491b23d8636e1e5c, type: 2}
+  _features: 01000000
+  _modularMenuData:
+    _mainText: Nice job! if it loooks accurate press ok or repeat the scan
+    _sprite: {fileID: 21300000, guid: 5515134bbb0515545a347aafbba91666, type: 3}
+    _imageText: "\u0412\u043E\u0442 \u044D\u0442\u043E \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0430"
+    _titleText: 
+    _features: 02000000
+  _dialogMenuData:
+    _text: Great! Now we are ready!
+    _hasButton: 1
+  _voiceActingData:
+    _clip: {fileID: 0}
+  _voiceListenerData:
+    _listenDuration: 0
+    _intents: []
