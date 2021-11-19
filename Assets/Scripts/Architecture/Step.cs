@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Voice;
 
 namespace Architecture
 {
@@ -14,23 +17,38 @@ namespace Architecture
     {
         [SerializeField] private Transition[] _transitions;
 
-        
-        [OnValueChanged("UpdateFeatures")]
-        [DictionaryDrawerSettings(KeyLabel = "Feature Type", ValueLabel = "Feature Data")]
-        [SerializeField] private Dictionary<StepFeature, Data> _features = new Dictionary<StepFeature, Data>();
+        [OnValueChanged("DeleteDuplicates")] [SerializeField]
+        private StepFeature[] _features;
 
-        private void UpdateFeatures()
+        [ShowIf("@ContainsFeature(StepFeature.ModularMenu)")]
+        [SerializeField] private ModularMenuData _modularMenuData;
+        [ShowIf("@ContainsFeature(StepFeature.DialogMenu)")]
+        [SerializeField] private DialogMenuData _dialogMenuData;
+        [ShowIf("@ContainsFeature(StepFeature.VoiceActing)")]
+        [SerializeField] private VoiceActingData _voiceActingData;
+        [ShowIf("@ContainsFeature(StepFeature.VoiceListener)")]
+        [SerializeField] private VoiceListenerData _voiceListenerData;
+        [ShowIf("@ContainsFeature(StepFeature.DeviceAction)")]
+        [SerializeField] private DeviceActionData _deviceActionData;
+        
+        
+        private void DeleteDuplicates() => _features = _features.Distinct().ToArray();
+
+        public Data GetFeatureData(StepFeature featureType)
         {
-            var list = _features.Where(feature => feature.Key != feature.Value.FeatureType);
-            foreach (var pair in list)
+            if (!_features.Contains(featureType)) return null;
+            return featureType switch
             {
-                _features.Remove(pair.Key);
-            }
+                StepFeature.ModularMenu => _modularMenuData,
+                StepFeature.DialogMenu => _dialogMenuData,
+                StepFeature.DeviceAction => _deviceActionData,
+                StepFeature.VoiceActing => _voiceActingData,
+                StepFeature.VoiceListener => _voiceActingData,
+                _ => null
+            };
         }
 
-        public Data GetFeatureData(StepFeature featureType) => _features[featureType];
-
-        public bool ContainsFeature(StepFeature feature) => _features.ContainsKey(feature);
+        public bool ContainsFeature(StepFeature feature) => _features.Contains(feature);
 
         public Transition[] Transitions => _transitions;
     }

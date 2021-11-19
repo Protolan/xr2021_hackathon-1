@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2d3ff93ff48bd40ab5bca3cf4e6d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wit: {fileID: 0}
+  wit: {fileID: 1571575337}
   intent: Continue
   confidence: 0.787
   onIntentTriggered:
@@ -902,9 +902,6 @@ MonoBehaviour:
   _steps:
   - {fileID: 11400000, guid: 0888c680c4178ce45bb358823919855e, type: 2}
   - {fileID: 11400000, guid: e0734a4fcd3ac0d49b99c824e4fa3637, type: 2}
-  - {fileID: 11400000, guid: 8f05f0890f5b69f44b289f4e72aad552, type: 2}
-  - {fileID: 11400000, guid: 706191683bc7add4eaf85d753715847b, type: 2}
-  - {fileID: 11400000, guid: 4e1a41aef23df7c4ea8e270712f0da8e, type: 2}
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
   _onStepChanged: {fileID: 11400000, guid: aecc96e9b3d07e84fab528c8985f7c23, type: 2}
   _onStepEnded: {fileID: 11400000, guid: b2a3b4a40cbe7d74097e96434d1c204c, type: 2}
@@ -1018,7 +1015,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   witRuntimeConfiguration:
-    witConfiguration: {fileID: 11400000, guid: db90f489732b1cc4eb770a8239a79db0, type: 2}
+    witConfiguration: {fileID: 11400000, guid: 773d2729fefde874bacb77061223011a, type: 2}
     minKeepAliveVolume: 0.0005
     minKeepAliveTimeInSeconds: 2
     minTranscriptionKeepAliveTimeInSeconds: 1

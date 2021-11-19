@@ -2,12 +2,12 @@
 {
     public enum StepFeature
     {
+        Default,
         ModularMenu,
         DialogMenu,
         DeviceAction,
         VoiceActing,
-        VoiceAnswer,
-        DevicePlacing,
+        VoiceListener,
         DeviceDrawer,
     }
 }

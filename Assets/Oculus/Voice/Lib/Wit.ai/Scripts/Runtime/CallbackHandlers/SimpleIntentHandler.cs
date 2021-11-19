@@ -15,7 +15,7 @@ namespace Facebook.WitAi.CallbackHandlers
     {
         [SerializeField] public string intent;
         [Range(0, 1f)]
-        [SerializeField] public float confidence = .9f;
+        [SerializeField] private float _confidence = .9f;
         [SerializeField] private UnityEvent onIntentTriggered = new UnityEvent();
 
         public UnityEvent OnIntentTriggered => onIntentTriggered;
@@ -24,11 +24,9 @@ namespace Facebook.WitAi.CallbackHandlers
         {
             var intentNode = WitResultUtilities.GetFirstIntent(response);
             Debug.Log(response?["intents"].Count);
-            Debug.Log($"Схваченное намерение: {intentNode["name"].Value}, пойманное слово {response["text"]}, уверенность {intentNode["confidence"].AsFloat}");
-            if (intent == intentNode["name"].Value)
-            {
-                onIntentTriggered.Invoke();
-            }
+            var confidence = float.Parse(response["confidence"].Value);
+            Debug.Log($"Схваченное намерение: {intentNode["name"].Value}, пойманное слово {response["text"]}, уверенность {intentNode["confidence"]}");
+          
         }
     }
 }

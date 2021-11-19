@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: WitConfiguration
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 0}
+    name: hackathonapp
+    id: 317228706911525
+    lang: en
+    isPrivate: 0
+    createdAt: 2021-11-18T14:26:16-0800
+  configId: 7f9d8aac74d085046a13e29220e7d8d0
+  clientAccessToken: TLOTHAYOLBTDF7GMMXAWZQTEI7JKDVPX
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 604945627489569
+    name: clothes
+    lookups:
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: cotton
+      synonyms:
+      - cotton
+    - keyword: jeans
+      synonyms:
+      - jeans
+    - keyword: sneakers
+      synonyms:
+      - sneakers
+    - keyword: wool
+      synonyms:
+      - wool
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 609924396919904
+    name: Continue
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 473149664102359
+    name: StartGuide
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 281904780525778
+    name: StartTroubleshooting
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1094461431317080
+    name: StartWashing
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 264400502412740
+      name: clothes:clothes
+      lookups: []
+      roles: []
+      keywords: []
+  traits: []

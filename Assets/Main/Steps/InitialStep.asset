@@ -68,6 +68,9 @@ MonoBehaviour:
     - Name: $v
       Entry: 7
       Data: 3|Voice.VoiceAnswerData, Assembly-CSharp
+    - Name: Duration
+      Entry: 4
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
