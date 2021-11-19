@@ -1,4 +1,5 @@
-﻿using ScriptableSystem.GameEvent;
+﻿using System;
+using ScriptableSystem.GameEvent;
 using UnityEngine;
 
 namespace Architecture
@@ -38,6 +39,8 @@ namespace Architecture
                 stepTransition.OnConditionComplete -= LoadNextStep;
             }
         }
+
+        private void OnDisable() => UnsubscribeTransitions(_currentStep);
 
         private void LoadNextStep(Step step)
         {

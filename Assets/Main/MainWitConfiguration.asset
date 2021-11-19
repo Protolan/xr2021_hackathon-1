@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
-  m_Name: Shapes Demo - WitConfiguration
+  m_Name: MainWitConfiguration
   m_EditorClassIdentifier: 
   application:
     witConfiguration: {fileID: 0}
     name: hackathonapp
     id: 317228706911525
     lang: en
-    isPrivate: 1
+    isPrivate: 0
     createdAt: 2021-11-18T14:26:16-0800
-  configId: 4e21a24e472ab684e84db753427d5687
+  configId: 127bdf6fdb53a3045a1c4eeb978fbd72
   clientAccessToken: TLOTHAYOLBTDF7GMMXAWZQTEI7JKDVPX
   entities:
   - witConfiguration: {fileID: 11400000}

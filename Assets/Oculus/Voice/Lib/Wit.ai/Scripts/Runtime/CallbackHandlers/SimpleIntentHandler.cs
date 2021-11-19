@@ -23,7 +23,9 @@ namespace Facebook.WitAi.CallbackHandlers
         protected override void OnHandleResponse(WitResponseNode response)
         {
             var intentNode = WitResultUtilities.GetFirstIntent(response);
-            if (intent == intentNode["name"].Value && intentNode["confidence"].AsFloat > confidence)
+            Debug.Log(response?["intents"].Count);
+            Debug.Log($"Схваченное намерение: {intentNode["name"].Value}, пойманное слово {response["text"]}, уверенность {intentNode["confidence"].AsFloat}");
+            if (intent == intentNode["name"].Value)
             {
                 onIntentTriggered.Invoke();
             }

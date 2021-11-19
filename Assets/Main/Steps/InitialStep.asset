@@ -12,19 +12,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: InitialStep
   m_EditorClassIdentifier: 
-  _features: 01000000
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _features
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Architecture.StepFeature,
+        Assembly-CSharp],[Architecture.Data, Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Architecture.StepFeature,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|Architecture.DialogMenuData, Assembly-CSharp
+    - Name: _text
+      Entry: 1
+      Data: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0414\u0440\u0443\u0436\u0438\u0449\u0435!"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 3|Voice.VoiceAnswerData, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: e0734a4fcd3ac0d49b99c824e4fa3637, type: 2}
+  - _nextStep: {fileID: 11400000, guid: 8f05f0890f5b69f44b289f4e72aad552, type: 2}
     _condition: {fileID: 11400000, guid: a11fe7f6f7d1fbc4db5a5efa75dc47a4, type: 2}
-  _modularMenuData:
-    _mainText: Hello! This is Initital Step!
-    _sprite: {fileID: 21300000, guid: 5515134bbb0515545a347aafbba91666, type: 3}
-    _imageText: "\u0412\u043E\u0442 \u044D\u0442\u043E \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0430"
-    _deviceActionData:
-      _devicesToChoose: []
-    _features: 
-  _dialogMenuData:
-    _text: Hello! My name is buddy, I will help you to figure out how to use you
-      device!
-  _voiceActingData:
-    _clip: {fileID: 0}
