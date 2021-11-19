@@ -43,7 +43,7 @@ namespace Architecture
                 StepFeature.DialogMenu => _dialogMenuData,
                 StepFeature.DeviceAction => _deviceActionData,
                 StepFeature.VoiceActing => _voiceActingData,
-                StepFeature.VoiceListener => _voiceActingData,
+                StepFeature.VoiceListener => _voiceListenerData,
                 _ => null
             };
         }

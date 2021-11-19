@@ -15,9 +15,18 @@ namespace Voice
         [SerializeField] private float _confidence;
 
         [SerializeField] private string _name;
+        
+        [SerializeField] private bool _hasEntity;
 
+        [ShowIf("_hasEntity")]
+        [SerializeField] private string _entityName;
+        
         public float Confidence => _confidence;
 
         public string Name => _name;
+
+        public bool HasEntity => _hasEntity;
+
+        public string EntityName => _entityName;
     }
 }

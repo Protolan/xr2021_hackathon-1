@@ -20,69 +20,23 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _features
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Architecture.StepFeature,
-        Assembly-CSharp],[Architecture.Data, Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Architecture.StepFeature,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 7
-      Data: 2|Architecture.DialogMenuData, Assembly-CSharp
-    - Name: _text
-      Entry: 1
-      Data: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0414\u0440\u0443\u0436\u0438\u0449\u0435!"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 4
-    - Name: $v
-      Entry: 7
-      Data: 3|Voice.VoiceAnswerData, Assembly-CSharp
-    - Name: Duration
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: 8f05f0890f5b69f44b289f4e72aad552, type: 2}
-    _condition: {fileID: 11400000, guid: a11fe7f6f7d1fbc4db5a5efa75dc47a4, type: 2}
+  - _nextStep: {fileID: 11400000, guid: e0734a4fcd3ac0d49b99c824e4fa3637, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 0500000002000000
+  _modularMenuData:
+    _mainText: 
+    _sprite: {fileID: 0}
+    _imageText: 
+    _deviceActionData:
+      _devicesToChoose: []
+    _features: 
+  _dialogMenuData:
+    _text: Hello!
+  _voiceActingData:
+    _clip: {fileID: 0}
+  _voiceListenerData:
+    _listenDuration: 0
+    _intents:
+    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}

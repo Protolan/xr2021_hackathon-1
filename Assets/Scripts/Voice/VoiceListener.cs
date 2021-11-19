@@ -1,4 +1,6 @@
-﻿using Architecture;
+﻿using System.Collections;
+using System.Globalization;
+using Architecture;
 using Facebook.WitAi;
 using Facebook.WitAi.CallbackHandlers;
 using Facebook.WitAi.Lib;
@@ -8,43 +10,94 @@ using UnityEngine;
 
 namespace Voice
 {
-    public class VoiceListener: WitResponseHandler
+    public class VoiceListener : WitResponseHandler
     {
         [SerializeField] private AppVoiceExperience _voice;
         [SerializeField] private StepGameEvent _onStepLoaded;
 
         private VoiceListenerData _data;
-        private void OnEnable() => _onStepLoaded.AddAction(StartListeningIfHave);
-        private void OnDisable() => _onStepLoaded.RemoveAction(StartListeningIfHave);
+        private bool _isActive;
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            _onStepLoaded.AddAction(StartListeningIfHave);
+        }
+
+        protected override void OnDisable()
+        {
+            base.OnDisable();
+            _onStepLoaded.RemoveAction(StartListeningIfHave);
+        }
+
         protected override void OnHandleResponse(WitResponseNode response)
         {
+            if (!_isActive) return;
+            Debug.Log("Запрос принял");
             WitResponseNode handleIntent = response.GetFirstIntent();
+            var entityName = handleIntent["entities"][0].Value;
+            if (!CheckForIntent(handleIntent))
+            {
+                Debug.Log("Намерение не найдено, пробуем еще раз");
+                _voice.Activate();
+            }
+        }
+
+        private bool CheckForIntent(WitResponseNode handleIntent)
+        {
             foreach (var intent in _data._intents)
             {
                 if (IntentEquals(intent, handleIntent))
                 {
                     intent.Invoke();
-                    return;
+                    return true;
                 }
             }
+
+            return false;
         }
 
-        private static bool IntentEquals(VoiceIntent intent, WitResponseNode handleIntent)
+        private bool IntentEquals(VoiceIntent intent, WitResponseNode handleIntent)
         {
-            WitResponseNode response;
             return intent.Name == handleIntent["name"].Value
-                   && float.Parse(handleIntent["confidence"].Value) >= intent.Confidence;
+                   && String2Float(handleIntent["confidence"].Value) >= intent.Confidence;
         }
 
         private void StartListeningIfHave(Step step)
         {
             if (step.ContainsFeature(StepFeature.VoiceListener))
             {
-                _data = step.GetFeatureData(StepFeature.VoiceActing) as VoiceListenerData;
-                _voice.Activate();
+                Debug.Log("Начинаю слушать");
+                _isActive = true;
+                _data = step.GetFeatureData(StepFeature.VoiceListener) as VoiceListenerData;
+                StartCoroutine(StartListening());
             }
+            else
+                _isActive = false;
         }
 
-      
+        private IEnumerator StartListening()
+        {
+            yield return new WaitForSeconds(1f);
+            _voice.Activate();
+        }
+
+        private float String2Float(string line)
+        {
+            float res;
+            try
+            {
+                string sp = NumberFormatInfo.CurrentInfo.CurrencyDecimalSeparator;
+                line = line.Replace(".", sp);
+                line = line.Replace(",", sp);
+                res = float.Parse(line);
+            }
+            catch
+            {
+                res = 0f;
+            }
+
+            return res;
+        }
     }
 }

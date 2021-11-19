@@ -19,7 +19,7 @@ namespace Facebook.WitAi.CallbackHandlers
             if (!wit) wit = FindObjectOfType<VoiceService>();
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             if (!wit) wit = FindObjectOfType<VoiceService>();
             if (!wit)
@@ -34,7 +34,7 @@ namespace Facebook.WitAi.CallbackHandlers
             }
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             wit.events.OnResponse.RemoveListener(OnHandleResponse);
         }

@@ -21,48 +21,26 @@ MonoBehaviour:
     createdAt: 2021-11-18T14:26:16-0800
   configId: 127bdf6fdb53a3045a1c4eeb978fbd72
   clientAccessToken: TLOTHAYOLBTDF7GMMXAWZQTEI7JKDVPX
-  entities:
-  - witConfiguration: {fileID: 11400000}
-    id: 604945627489569
-    name: clothes
-    lookups:
-    - keywords
-    roles:
-    - 
-    keywords:
-    - keyword: cotton
-      synonyms:
-      - cotton
-    - keyword: jeans
-      synonyms:
-      - jeans
-    - keyword: sneakers
-      synonyms:
-      - sneakers
-    - keyword: wool
-      synonyms:
-      - wool
+  entities: []
   intents:
   - witConfiguration: {fileID: 11400000}
-    id: 609924396919904
-    name: Continue
-    entities: []
-  - witConfiguration: {fileID: 11400000}
     id: 473149664102359
-    name: StartGuide
+    name: startGuide
     entities: []
   - witConfiguration: {fileID: 11400000}
     id: 281904780525778
-    name: StartTroubleshooting
+    name: startTroubleshooting
     entities: []
   - witConfiguration: {fileID: 11400000}
     id: 1094461431317080
-    name: StartWashing
-    entities:
-    - witConfiguration: {fileID: 11400000}
-      id: 264400502412740
-      name: clothes:clothes
-      lookups: []
-      roles: []
-      keywords: []
+    name: startWashing
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1096183097785907
+    name: wit$cancel
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 482024633134454
+    name: wit$confirmation
+    entities: []
   traits: []

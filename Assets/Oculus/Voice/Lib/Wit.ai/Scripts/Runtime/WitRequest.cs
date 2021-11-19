@@ -372,7 +372,7 @@ namespace Facebook.WitAi
             {
                 statusCode = (int) e.Status;
                 statusDescription = e.Message;
-                Debug.LogError(
+                Debug.LogWarning(
                     $"{e.Message}\nRequest Stack Trace:\n{callingStackTrace}\nResponse Stack Trace:\n{e.StackTrace}");
             }
 
