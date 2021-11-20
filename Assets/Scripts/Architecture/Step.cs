@@ -34,6 +34,12 @@ namespace Architecture
         
         private void DeleteDuplicates() => _features = _features.Distinct().ToArray();
 
+        public void SetText(string text)
+        {
+            _modularMenuData._mainText = text;
+            _dialogMenuData._text = text;
+        }
+        
         public Data GetFeatureData(StepFeature featureType)
         {
             if (!_features.Contains(featureType)) return null;

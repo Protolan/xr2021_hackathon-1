@@ -14,8 +14,6 @@ namespace Facebook.WitAi.CallbackHandlers
     public class SimpleIntentHandler : WitResponseHandler
     {
         [SerializeField] public string intent;
-        [Range(0, 1f)]
-        [SerializeField] private float _confidence = .9f;
         [SerializeField] private UnityEvent onIntentTriggered = new UnityEvent();
 
         public UnityEvent OnIntentTriggered => onIntentTriggered;
@@ -23,9 +21,8 @@ namespace Facebook.WitAi.CallbackHandlers
         protected override void OnHandleResponse(WitResponseNode response)
         {
             var intentNode = WitResultUtilities.GetFirstIntent(response);
-            Debug.Log(response?["intents"].Count);
             var confidence = float.Parse(intentNode["confidence"].Value);
-            Debug.Log($"Схваченное намерение: {intentNode["name"].Value}, пойманное слово {response["text"]}, уверенность {intentNode["confidence"]}");
+           
           
         }
     }
