@@ -1,60 +1,60 @@
-<Step_1.0><Hello! My name is Helpy and I am your assistant. I can help you with your home appliances. Choose your item and we'll be ready to start>
-<Step_1.1><Hold your controller, on the front edge of your washing machine, then press and hold the trigger button, draw a line from one side of the item to another, then release the trigger button when you finished.>
-<Step_1.2><Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate>
-<Step_1.3><Nice job! if it looks accurate press ok or repeat the scan>
-<Step_1.4><I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?>
-<Step_2.1><Okay! Let's go through the control panel first.>
-<Step_2.2><That button turns on the washing machine. Press it to start preparing washing cycle.>
-<Step_2.3><Cool! That's detergent dispenser, open it and say "ok".>
-<Step_2.4><It has different compartments. I'll lead you trough them.>
-<Step_2.5><First is for prewash detergent. Before adding any, be sure there is no copmartment for bleach chemistry inside.>
-<Step_2.6><Second is for main wash detergent, liquid or powder, you need to put it there before the washing cycle starts.>
-<Step_2.7><Third is for any kind of fabric softners.>
-<Step_2.8><If everything is clear close detergent dispencer and say "ok">
-<Step_2.9><That is programme selector dial.
-<Step_2.10><Here is temperature control dial. More about temperature and programms you'll learn in a practical tips for washing.>
-<Step_2.11><Now let's talk about buttons for additional options. You can find them here.>
-<Step_2.12><That is EcoTime option. It optimise washing cycle and helps wash cotton and synthetic fabrics faster with less water and electricity used.>
-<Step_2.13><Here is Bleaching option. It helps with washing heavily soiled fabric. Use bleaching chemistry in a special compartment which goes inside the 1st section of detergent dispenser.>
-<Step_2.14><This button controls spin. For some fabrics you'll gonna need it.>
-<Step_2.15><That is Delay Start option. It allows you to determine when you want the next wash programme to start. You use it if the programme needs to be finished at a certain time, for instance when you come home from work. Delay time is up to 12 hours.>
-<Step_2.16><That is a Start/Pause button. Use it when you ready to start the wash cycle. Also it used to pause it. The indicator will start to flash. Wait for CLOSED indicator to turn off and after that you could open the machine. After you ready to continue the cycle - check if the door is closed and push the button again.>
-<Step_2.17><These indicators will help you understand the status of the washing cycle.>
-<Step_2.18><Nice job! You've completed basic tour on your washing machine. If you want to get some tips on washing press next \ say OK>
-<Step_3.0><What went wrong?>
-<Step_4.1><Is the door closed tight?>
-<Step_4.2><Did you press the ON\OFF button?>
-<Step_4.3><Did you press the Start \ Pause button? Say "okay" if yes.>
-<Step_4.4><Is your problem solved?>
-<Step_4.5><To go back to the main menu say "Main Menu">
-<Step_4.6><Looks like you need help from the professional. Should I call the hotline?>
-<Step_5.1><Is power plug connected correctly?>
-<Step_5.2><The electricity could be turned off in the house.>
-<Step_5.3><Is your problem solved?>
-<Step_5.4><To go back to the main menu say "Main Menu">
-<Step_5.5><Looks like you need help from the professional. Should I call the hotline?>
-<Step_6.1><Drain hose might be blocked or twisted. Straighten or cleaning it might help.>
-<Step_6.2><The selected programe does not provide water drain, so you should start the drain manually.>
-<Step_6.3><Is your problem solved?>
-<Step_6.4><To go back to the main menu say "Main Menu">
-<Step_6.5><Looks like you need help from the professional. Should I call the hotline?>
-<Step_7.0><What do you want to wash?>
-<Step_8.1><You could use the 9 programe for jeans. Turn the dial to 9.>
-<Step_8.2><The perfect temperature for jeans is 40. Set it up.>
-<Step_9.1><You could use the 2nd programe for cotton. Turn the dial to 2.>
-<Step_9.2><The perfect temperature for cotton is 40. Set it up.>
-<Step_9.3><Put the laundry inside and close the door. Check if it closed tight.>
-<Step_9.4><Open the detergent dispenser and say 'okay'>
-<Step_9.5><Put the detergent into the compartment 2.>
-<Step_9.6><Add the detergent for heavili soiled fabric into compartment 1. Say "okay" when you done.>
-<Step_9.7><Press the Start button.>
-<Step_9.8><Nice! The washing cycle will end in 60 minutes, don't forget about it!>
-<Step_9.10><Nice! The washing cycle will end in 103 minutes, don't forget about it!>
-<Step_9.11><Nice! The washing cycle will end in 50 minutes, don't forget about it!>
-<Step_9.12><Nice! The washing cycle will end in 43 minutes, don't forget about it!>
-<Step_10.1><You could use the 7 programe for wool. Turn the dial to 7.>
-<Step_10.2><The perfect temperature for wool is 40. Set it up.>
-<Step_11.1><You could use the 13 programe for jeans. Turn the dial to 13.>
-<Step_11.2><The perfect temperature for sneakers is 30. Set it up.>
-<Step_11.3><Put the sneakers inside and close the door. Check if it closed tight.I reccomend to wash not more than 2 pairs in 1 washing cycle. That way the result would be better.>
+<Step_1.0><Hello! My name is Helpy and I am your assistant. I can help you with your home appliances. Choose your item and we'll be ready to start><2>
+<Step_1.1><Hold your controller, on the front edge of your washing machine, then press and hold the trigger button, draw a line from one side of the item to another, then release the trigger button when you finished.><2>
+<Step_1.2><Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate><2>
+<Step_1.3><Nice job! if it looks accurate press ok or repeat the scan><2>
+<Step_1.4><I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?><2>
+<Step_2.1><Okay! Let's go through the control panel first.><2>
+<Step_2.2><That button turns on the washing machine. Press it to start preparing washing cycle.><2>
+<Step_2.3><Cool! That's detergent dispenser, open it and say "ok".><2>
+<Step_2.4><It has different compartments. I'll lead you trough them.><2>
+<Step_2.5><First is for prewash detergent. Before adding any, be sure there is no copmartment for bleach chemistry inside.><2>
+<Step_2.6><Second is for main wash detergent, liquid or powder, you need to put it there before the washing cycle starts.><2>
+<Step_2.7><Third is for any kind of fabric softners.><2>
+<Step_2.8><If everything is clear close detergent dispencer and say "ok"><2>
+<Step_2.9><That is programme selector dial.><2>
+<Step_2.10><Here is temperature control dial. More about temperature and programms you'll learn in a practical tips for washing.><2>
+<Step_2.11><Now let's talk about buttons for additional options. You can find them here.><2>
+<Step_2.12><That is EcoTime option. It optimise washing cycle and helps wash cotton and synthetic fabrics faster with less water and electricity used.><2>
+<Step_2.13><Here is Bleaching option. It helps with washing heavily soiled fabric. Use bleaching chemistry in a special compartment which goes inside the 1st section of detergent dispenser.><2>
+<Step_2.14><This button controls spin. For some fabrics you'll gonna need it.><2>
+<Step_2.15><That is Delay Start option. It allows you to determine when you want the next wash programme to start. You use it if the programme needs to be finished at a certain time, for instance when you come home from work. Delay time is up to 12 hours.><2>
+<Step_2.16><That is a Start/Pause button. Use it when you ready to start the wash cycle. Also it used to pause it. The indicator will start to flash. Wait for CLOSED indicator to turn off and after that you could open the machine. After you ready to continue the cycle - check if the door is closed and push the button again.><2>
+<Step_2.17><These indicators will help you understand the status of the washing cycle.><2>
+<Step_2.18><Nice job! You've completed basic tour on your washing machine. If you want to get some tips on washing press next \ say OK><2>
+<Step_3.0><What went wrong?><2>
+<Step_4.1><Is the door closed tight?><2>
+<Step_4.2><Did you press the ON\OFF button?><2>
+<Step_4.3><Did you press the Start \ Pause button? Say "okay" if yes.><2>
+<Step_4.4><Is your problem solved?><2>
+<Step_4.5><To go back to the main menu say "Main Menu"><2>
+<Step_4.6><Looks like you need help from the professional. Should I call the hotline?><2>
+<Step_5.1><Is power plug connected correctly?><2>
+<Step_5.2><The electricity could be turned off in the house.><2>
+<Step_5.3><Is your problem solved?><2>
+<Step_5.4><To go back to the main menu say "Main Menu"><2>
+<Step_5.5><Looks like you need help from the professional. Should I call the hotline?><2>
+<Step_6.1><Drain hose might be blocked or twisted. Straighten or cleaning it might help.><2>
+<Step_6.2><The selected programe does not provide water drain, so you should start the drain manually.><2>
+<Step_6.3><Is your problem solved?><2>
+<Step_6.4><To go back to the main menu say "Main Menu"><2>
+<Step_6.5><Looks like you need help from the professional. Should I call the hotline?><2>
+<Step_7.0><What do you want to wash?><2>
+<Step_8.1><You could use the 9 programe for jeans. Turn the dial to 9.><2>
+<Step_8.2><The perfect temperature for jeans is 40. Set it up.><2>
+<Step_9.1><You could use the 2nd programe for cotton. Turn the dial to 2.><2>
+<Step_9.2><The perfect temperature for cotton is 40. Set it up.><2>
+<Step_9.3><Put the laundry inside and close the door. Check if it closed tight.><2>
+<Step_9.4><Open the detergent dispenser and say 'okay'><2>
+<Step_9.5><Put the detergent into the compartment 2.><2>
+<Step_9.6><Add the detergent for heavily soiled fabric into compartment 1. Say "okay" when you done.><2>
+<Step_9.7><Press the Start button.><2>
+<Step_9.8><Nice! The washing cycle will end in 60 minutes, don't forget about it!><2>
+<Step_9.10><Nice! The washing cycle will end in 103 minutes, don't forget about it!><2>
+<Step_9.11><Nice! The washing cycle will end in 50 minutes, don't forget about it!><2>
+<Step_9.12><Nice! The washing cycle will end in 43 minutes, don't forget about it!><2>
+<Step_10.1><You could use the 7 programe for wool. Turn the dial to 7.><2>
+<Step_10.2><The perfect temperature for wool is 40. Set it up.><2>
+<Step_11.1><You could use the 13 programe for jeans. Turn the dial to 13.><2>
+<Step_11.2><The perfect temperature for sneakers is 30. Set it up.><2>
+<Step_11.3><Put the sneakers inside and close the door. Check if it closed tight.I reccomend to wash not more than 2 pairs in 1 washing cycle. That way the result would be better.><2>
 
