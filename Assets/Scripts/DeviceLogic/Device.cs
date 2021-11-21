@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Architecture;
 using ScriptableSystem.GameEvent;
 using Sirenix.OdinInspector;
@@ -12,8 +13,20 @@ namespace DeviceLogic
         [SerializeField] private Dictionary<string, DeviceButton> _buttons;
         [SerializeField] private StepGameEvent _onStepChanged;
         [SerializeField] private Footnote _footnote;
+        [SerializeField] private DeviceButton[] _buttonArray;
 
+        [Button]
+        private void MakeDictionary()
+        {
+            _buttons = _buttonArray.ToDictionary(x => x.name);
+        }
+        
+        
+        
         private DeviceButton _currentButton;
+        
+        
+        
         
         private void OnEnable() => _onStepChanged.AddAction(StartActionIfHave);
 

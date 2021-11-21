@@ -2,21 +2,22 @@
 using Architecture;
 using ScriptableSystem.GameEvent;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace DeviceLogic.DevicePlacer
 {
-    public class DevicePlacer: MonoBehaviour
+    public class DevicePlacer : MonoBehaviour
     {
         [SerializeField] private DemoDevice _device;
         [SerializeField] private StepGameEvent _onStepLoaded;
-        [SerializeField] private Transform _originPoint;
+        [SerializeField] private OVRInputModule _laser;
 
         private bool _isActive = false;
         private bool _isPlacing = false;
         private InputModule _input;
         private const int MaxDistant = 3;
 
-        private void Start() => _input = new InputModule();
+        private void Awake() => _input = new InputModule();
 
         private void OnEnable() => _onStepLoaded.AddAction(StartPlacingDeviceIfHave);
 
@@ -31,11 +32,18 @@ namespace DeviceLogic.DevicePlacer
                 _device.MakeTransparent();
                 _input.ONButtonDown += ActivatePlacing;
             }
+            else
+            {
+                _isActive = false;
+                _device.gameObject.SetActive(false);
+                _device.MakeNormal();
+            }
         }
 
         private void ActivatePlacing()
         {
             _isPlacing = true;
+            _device.MakeTransparent();
             _input.ONButtonDown -= ActivatePlacing;
             _input.ONButtonUp += DeactivatePlacing;
         }
@@ -43,17 +51,28 @@ namespace DeviceLogic.DevicePlacer
         private void DeactivatePlacing()
         {
             _isPlacing = false;
+            _device.MakeNormal();
             _input.ONButtonUp -= DeactivatePlacing;
             _input.ONButtonDown += ActivatePlacing;
         }
 
+
+        private void Update()
+        {
+            if (!_isActive) return;
+            _input.Check();
+
+        }
+
         private void FixedUpdate()
         {
-            if(!_isActive) return;
-            _input.Check();
-            if(!_isPlacing) return;
-            if (Physics.Raycast(_originPoint.position, _originPoint.forward, out var hit, 3, LayerMask.NameToLayer("PlacingPlatform")))
-                _device.transform.position = hit.transform.position;
+            if (!_isActive) return;
+            if (!_isPlacing) return;
+            if (Physics.Raycast(_laser.rayTransform.position, _laser.rayTransform.forward, out var hit, MaxDistant))
+            {
+                if (hit.transform.TryGetComponent(out PlacingPlatform placingPlatform))
+                    _device.transform.position = hit.point;
+            }
         }
     }
 }

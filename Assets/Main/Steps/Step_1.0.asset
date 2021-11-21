@@ -39,7 +39,8 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 0764a9a8977307245b949f81e01c412f, type: 3}
   _voiceListenerData:
     _listenDuration: 0
-    _intents: []
+    _intents:
+    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

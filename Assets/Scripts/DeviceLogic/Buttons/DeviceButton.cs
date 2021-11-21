@@ -1,21 +1,19 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace DeviceLogic
 {
-    public abstract class DeviceButton: MonoBehaviour
+    public class DeviceButton: MonoBehaviour
     {
+        [ChildGameObjectsOnly]
         [SerializeField] private Transform _footnotePoint;
-
         public Transform FootnotePoint => _footnotePoint;
 
-        public virtual void Activate()
-        {
-            
-        }
+        public virtual void Activate() => gameObject.SetActive(true);
 
         public virtual void Deactivate()
         {
-            
+            gameObject.SetActive(false);
         }
     }
 }

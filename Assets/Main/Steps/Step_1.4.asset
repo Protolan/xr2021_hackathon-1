@@ -21,8 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 2db6bf426c0b49f489dee4b740bd38ab, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 02000000050000000400000005000000
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -30,13 +32,15 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: I can share with you the basic information about washing machine, practical
+      tips on washing or troubleshooting. How can I help you?
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 262793bc5cab6024d8f17bbae00be096, type: 3}
   _voiceListenerData:
     _listenDuration: 0
-    _intents: []
+    _intents:
+    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

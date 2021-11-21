@@ -47,7 +47,7 @@ namespace Voice
 
         private IEnumerator WaitForEnding(float clipDuration)
         {
-            yield return clipDuration;
+            yield return new WaitForSeconds(clipDuration);
             _onClipFinished.Invoke();
         }
     }
