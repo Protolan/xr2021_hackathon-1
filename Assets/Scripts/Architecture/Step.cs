@@ -13,8 +13,8 @@ namespace Architecture
         order = 120)]
     public class Step : SerializedScriptableObject
     {
-        [SerializeField] private List<Transition> _transitions;
-        [OnValueChanged("DeleteDuplicates")] 
+        [SerializeField] private List<Transition> _transitions = new List<Transition>();
+        [OnValueChanged("DeleteDuplicates")]  
         [SerializeField] private List<StepFeature> _features = new List<StepFeature>();
         [ShowIf("@ContainsFeature(StepFeature.ModularMenu)")]
         [SerializeField] private ModularMenuData _modularMenuData;

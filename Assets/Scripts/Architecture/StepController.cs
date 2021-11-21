@@ -50,6 +50,13 @@ namespace Architecture
             builder.SetVoiceListenersFromFile(_steps, filePath, intent);
         }
 
+        [Button]
+        private void CreateStepsJson(string filePath)
+        {
+            var builder = new StepBuilder();
+            builder.CreateStepsJSON(_steps, filePath);
+        }
+
 
         private Step _currentStep;
 

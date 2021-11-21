@@ -88,7 +88,11 @@ namespace Architecture
 
         public void CreateStepsJSON(List<Step> steps, string filePath)
         {
-            
+            var stepsSerializable = new StepSerializable[steps.Count];
+            for (var i = 0; i < stepsSerializable.Length; i++) 
+                stepsSerializable[i] = new StepSerializable(steps[i]);
+            var stepsJson = JsonUtility.ToJson(new StepsSerializable(stepsSerializable));
+            File.WriteAllText(filePath, stepsJson);
         }
 
         private static string[] CreateLines(string filePath)

@@ -1,0 +1,2555 @@
+{
+  "_steps": [
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6532
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Hello! My name is Helpy and I am your assistant. I can help you with your home appliances. Choose your item and we'll be ready to start",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6216
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6536
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Hold your controller, on the front edge of your washing machine, then press and hold the trigger button, draw a line from one side of the item to another, then release the trigger button when you finished.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6278
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6540
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6222
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6544
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice job! if it looks accurate press ok or repeat the scan",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6328
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6548
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 0
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6552
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Okay! Let's go through the control panel first.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6236
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6556
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "That button turns on the washing machine. Press it to start preparing washing cycle.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6270
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Power",
+        "_footnoteText": "Power Button"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6560
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Cool! That's detergent dispenser, open it and say \"ok\".",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6304
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer",
+        "_footnoteText": "Soap Drawer"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6564
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "It has different compartments. I'll lead you trough them.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6242
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6568
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "First is for prewash detergent. Before adding any, be sure there is no copmartment for bleach chemistry inside.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6306
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer_Slot_1",
+        "_footnoteText": "Slot for prewash detergent"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6572
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Second is for main wash detergent, liquid or powder, you need to put it there before the washing cycle starts.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6284
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer_Slot_2",
+        "_footnoteText": "Slot for main wash detergent"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6576
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Third is for any kind of fabric softners.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6260
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer_Slot_3",
+        "_footnoteText": "Slot for fabric softeners"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6580
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "If everything is clear close detergent dispencer and say \"ok\"",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6300
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6584
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "That is programme selector dial.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6246
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Program",
+        "_footnoteText": "You can select program here"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6588
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Here is temperature control dial. More about temperature and programms you'll learn in a practical tips for washing.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6330
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_temperature",
+        "_footnoteText": "You can set temperature here"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6592
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Now let's talk about buttons for additional options. You can find them here.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6320
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SpecialButtons",
+        "_footnoteText": "Special buttons"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6596
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "That is EcoTime option. It optimise washing cycle and helps wash cotton and synthetic fabrics faster with less water and electricity used.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6252
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Special_1",
+        "_footnoteText": "EcoTime"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6600
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Here is Bleaching option. It helps with washing heavily soiled fabric. Use bleaching chemistry in a special compartment which goes inside the 1st section of detergent dispenser.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6274
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Special_2",
+        "_footnoteText": "Bleaching"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6604
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "This button controls spin. For some fabrics you'll gonna need it.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6248
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Special_3",
+        "_footnoteText": "Spin control"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6608
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "That is Delay Start option. It allows you to determine when you want the next wash programme to start. You use it if the programme needs to be finished at a certain time, for instance when you come home from work. Delay time is up to 12 hours.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6264
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Special_4",
+        "_footnoteText": "Delay option"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6612
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "That is a Start/Pause button. Use it when you ready to start the wash cycle. Also it used to pause it. The indicator will start to flash. Wait for CLOSED indicator to turn off and after that you could open the machine. After you ready to continue the cycle - check if the door is closed and push the button again.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6312
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Start",
+        "_footnoteText": "Start washing program"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6616
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "These indicators will help you understand the status of the washing cycle.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6334
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6620
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice job! You've completed basic tour on your washing machine. If you want to get some tips on washing press next \\ say OK",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6310
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6624
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "What went wrong?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6292
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6628
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Is the door closed tight?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6226
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "WashDrawer",
+        "_footnoteText": "Check the door"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6632
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Did you press the ON\\OFF button?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6240
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Power",
+        "_footnoteText": "Check Power button"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6636
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Did you press the Start \\ Pause button? Say \"okay\" if yes.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6340
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Start",
+        "_footnoteText": "Check Start button"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6640
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Is your problem solved?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 0
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6644
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "To go back to the main menu say \"Main Menu\"",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6296
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6648
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Looks like you need help from the professional. Should I call the hotline?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6238
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6652
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Is power plug connected correctly?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6266
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "PowerPlug",
+        "_footnoteText": "Check your power plug"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6656
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The electricity could be turned off in the house.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6326
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6660
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Is your problem solved?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6332
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6664
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "To go back to the main menu say \"Main Menu\"",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6258
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6668
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Looks like you need help from the professional. Should I call the hotline?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6272
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6672
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Drain hose might be blocked or twisted. Straighten or cleaning it might help.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6250
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Drain",
+        "_footnoteText": "Check your drain hose"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6676
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The selected programe does not provide water drain, so you should start the drain manually.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6212
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6680
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Is your problem solved?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6214
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6684
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "To go back to the main menu say \"Main Menu\"",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6262
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6688
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Looks like you need help from the professional. Should I call the hotline?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6218
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6692
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "What do you want to wash?",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6268
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6696
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "You could use the 9 programe for jeans. Turn the dial to 9.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6288
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_program",
+        "_footnoteText": "Turn to program 9"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6700
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The perfect temperature for jeans is 40. Set it up.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6234
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_temperature",
+        "_footnoteText": "Turn to 40"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6704
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "You could use the 2nd programe for cotton. Turn the dial to 2.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6220
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_program",
+        "_footnoteText": "Turn to program 2"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6708
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The perfect temperature for cotton is 40. Set it up.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6228
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_temperature",
+        "_footnoteText": "Turn to program 40"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6712
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Put the laundry inside and close the door. Check if it closed tight.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6308
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "WashDrawer",
+        "_footnoteText": "Put your clothes"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6716
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Open the detergent dispenser and say 'okay'",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6244
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer",
+        "_footnoteText": "Open Drawer"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6720
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Put the detergent into the compartment 2.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6230
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer_Slot_2",
+        "_footnoteText": "Put detergent here"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6724
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Add the detergent for heavily soiled fabric into compartment 1. Say \"okay\" when you done.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6314
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": [
+          {
+            "instanceID": 18172
+          }
+        ]
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "SoapDrawer_Slot_1",
+        "_footnoteText": "Add detergent here"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6728
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Press the Start button.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6302
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_Start",
+        "_footnoteText": "Press to start washing"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6732
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice! The washing cycle will end in 60 minutes, don't forget about it!",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6322
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6736
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice! The washing cycle will end in 103 minutes, don't forget about it!",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6338
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6740
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice! The washing cycle will end in 50 minutes, don't forget about it!",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6224
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6744
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Nice! The washing cycle will end in 43 minutes, don't forget about it!",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6280
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "",
+        "_footnoteText": ""
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6748
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "You could use the 7 programe for wool. Turn the dial to 7.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6290
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_program",
+        "_footnoteText": "Turn to program 7"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6752
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The perfect temperature for wool is 40. Set it up.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6282
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_temperature",
+        "_footnoteText": "Turn to 40"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6756
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "You could use the 13 programe for jeans. Turn the dial to 13.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6318
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_program",
+        "_footnoteText": "Turn to program 13"
+      }
+    },
+    {
+      "_transitions": [
+        {
+          "_nextStep": {
+            "instanceID": -6760
+          },
+          "_condition": {
+            "instanceID": 18172
+          }
+        }
+      ],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "The perfect temperature for sneakers is 30. Set it up.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6286
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "Btn_temperature",
+        "_footnoteText": "Turn to 30"
+      }
+    },
+    {
+      "_transitions": [],
+      "_features": [
+        2,
+        3,
+        4
+      ],
+      "_modularMenuData": {
+        "_mainText": "",
+        "_sprite": {
+          "instanceID": 0
+        },
+        "_imageText": "",
+        "_titleText": "",
+        "_features": []
+      },
+      "_dialogDialogMenuData": {
+        "_text": "Put the sneakers inside and close the door. Check if it closed tight.I reccomend to wash not more than 2 pairs in 1 washing cycle. That way the result would be better.",
+        "_hasButton": true
+      },
+      "_voiceActingData": {
+        "_clip": {
+          "instanceID": 6324
+        }
+      },
+      "_voiceListenerData": {
+        "_listenDuration": 0.0,
+        "_intents": []
+      },
+      "_deviceButtonActionData": {
+        "_buttonID": "WashDrawer",
+        "_footnoteText": "Put your sneakers in washer"
+      }
+    }
+  ]
+}
