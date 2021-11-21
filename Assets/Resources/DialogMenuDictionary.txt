@@ -52,9 +52,9 @@
 <Step_9.6><Add the detergent for heavily soiled fabric into compartment 1. Say "okay" when you done.><2>
 <Step_9.7><Press the Start button.><2>
 <Step_9.8><Nice! The washing cycle will end in 60 minutes, don't forget about it!><2>
-<Step_9.10><Nice! The washing cycle will end in 103 minutes, don't forget about it!><2>
-<Step_9.11><Nice! The washing cycle will end in 50 minutes, don't forget about it!><2>
-<Step_9.12><Nice! The washing cycle will end in 43 minutes, don't forget about it!><2>
+<Step_9.9><Nice! The washing cycle will end in 103 minutes, don't forget about it!><2>
+<Step_9.10><Nice! The washing cycle will end in 50 minutes, don't forget about it!><2>
+<Step_9.11><Nice! The washing cycle will end in 43 minutes, don't forget about it!><2>
 <Step_10.1><You could use the 7 programe for wool. Turn the dial to 7.><2>
 <Step_10.2><The perfect temperature for wool is 40. Set it up.><2>
 <Step_11.1><You could use the 13 programe for jeans. Turn the dial to 13.><2>
