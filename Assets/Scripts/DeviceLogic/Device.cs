@@ -24,6 +24,7 @@ namespace DeviceLogic
             if (_currentButton != null)
             {
                 _currentButton.Deactivate();
+                _footnote.gameObject.SetActive(false);
                 _currentButton = null;
             }
             if (!step.ContainsFeature(StepFeature.DeviceAction))

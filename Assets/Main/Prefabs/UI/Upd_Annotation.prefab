@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222223992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 25.41, y: 25.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7109734957133465848}
@@ -163,7 +163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029325, y: 0.00010058}
+  m_AnchoredPosition: {x: 25.409822, y: 25.150095}
   m_SizeDelta: {x: 39.196, y: 17.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4442989921070522472
@@ -190,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4442989921070522472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.49, y: -8.87, z: 0}
+  m_LocalPosition: {x: 5.9198513, y: 16.279995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7109734957133465848}
@@ -208,7 +208,8 @@ GameObject:
   - component: {fileID: 7109734957133465849}
   - component: {fileID: 7109734957133465854}
   - component: {fileID: 7109734957133465855}
-  - component: {fileID: 7109734957133465852}
+  - component: {fileID: 1732295018}
+  - component: {fileID: 1732295017}
   m_Layer: 5
   m_Name: Upd_Annotation
   m_TagString: Untagged
@@ -301,7 +302,7 @@ MonoBehaviour:
     m_Bits: 55
   pointer: {fileID: 0}
   sortOrder: 0
---- !u!114 &7109734957133465852
+--- !u!114 &1732295018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,13 +311,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7109734957133465853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce08507e4bd4037a9d981382059eb25, type: 3}
+  m_Script: {fileID: 11500000, guid: b29c9c81f6e4477a9bd471cbc3bd7662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
   _text: {fileID: 7109734957952088816}
-  _button: {fileID: 0}
-  _parentObject: {fileID: 392640810615299843}
+--- !u!114 &1732295017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109734957133465853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4373405e4a4e27b17731c3c437dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _followingPoint: {fileID: 0}
 --- !u!1 &7109734957604138732
 GameObject:
   m_ObjectHideFlags: 0
