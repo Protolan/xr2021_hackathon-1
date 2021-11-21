@@ -1,7 +1,7 @@
 ﻿using Architecture;
 using ScriptableSystem.GameEvent;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 namespace DeviceLogic
 {
     public class DeviceBoundaryDrawer : MonoBehaviour
@@ -13,13 +13,14 @@ namespace DeviceLogic
         [SerializeField] private DeviceData _data;
         [SerializeField] private GameObject _boundaryObject;
         [SerializeField] private Transform _drawingPoint;
+        [SerializeField] private OVRInputModule test;
 
-        
         private DevicePlacingBehaviour _currentBehaviour;
         private bool _isActive;
         private Vector3 _startMachineScale;
         private InputModule _inputModule;
         
+
 
         private void Start()
         {
@@ -67,9 +68,12 @@ namespace DeviceLogic
         }
         private void StartSettingHeight()
         {
-            _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
-            _inputModule.ONButtonDown -= StartSettingHeight;
-            _inputModule.ONButtonUp += CheckSettingHeight;
+            if (test.onInterface)
+            {
+                _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
+                _inputModule.ONButtonDown -= StartSettingHeight;
+                _inputModule.ONButtonUp += CheckSettingHeight;
+            }
         }
 
         private void SetDevice()

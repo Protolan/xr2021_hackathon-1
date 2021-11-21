@@ -56,6 +56,7 @@ namespace UnityEngine.EventSystems
         // The raycaster that gets to do pointer interaction (e.g. with a mouse), gaze interaction always works
         [NonSerialized]
         public OVRRaycaster activeGraphicRaycaster;
+        public bool onInterface = false;
         [Header("Dragging")]
         [Tooltip("Minimum pointer movement in degrees to start dragging")]
         public float angleDragThreshold = 1;
@@ -703,12 +704,12 @@ namespace UnityEngine.EventSystems
                     // so even though this raycast came from a world space ray we must get a screen
                     // space position for the camera attached to this raycaster for compatability
                     Vector2 position = ovrRaycaster.GetScreenPosition(raycast);
-
+                    onInterface = true;
                     leftData.delta = position - leftData.position;
                     leftData.position = position;
                 }
             }
-
+            onInterface = false;
             // copy the apropriate data into right and middle slots
             PointerEventData rightData;
             GetPointerData(kMouseRightId, out rightData, true );
