@@ -656,7 +656,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8818633126084420745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,6 +690,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
   _text: {fileID: 8818633124628515415}
-  _speakerImage: {fileID: 8818633125811635540}
   _button: {fileID: 0}
   _parentObject: {fileID: 7305697506608865122}
