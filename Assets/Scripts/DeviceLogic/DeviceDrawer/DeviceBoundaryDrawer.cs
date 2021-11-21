@@ -1,5 +1,4 @@
-﻿using System;
-using Architecture;
+﻿using Architecture;
 using ScriptableSystem.GameEvent;
 using UnityEngine;
 
@@ -10,16 +9,17 @@ namespace DeviceLogic
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onBoundariesDrawn;
         [SerializeField] private GameEvent _onDrawingComplete;
+        [SerializeField] private GameEvent _onConfirmButtonPressed;
         [SerializeField] private DeviceData _data;
         [SerializeField] private GameObject _boundaryObject;
         [SerializeField] private Transform _drawingPoint;
 
         
         private DevicePlacingBehaviour _currentBehaviour;
-        private Action _onButtonDown;
-        private Action _onButtonUp;
         private bool _isActive;
         private Vector3 _startMachineScale;
+        private InputModule _inputModule;
+        
 
         private void Start()
         {
@@ -27,6 +27,7 @@ namespace DeviceLogic
             _boundaryObject.SetActive(false);
             _data._washingMachine.gameObject.SetActive(false);
             _startMachineScale = _data._washingMachine.transform.localScale;
+            _inputModule = new InputModule();
         }
 
 
@@ -34,8 +35,7 @@ namespace DeviceLogic
         {
             if(!_isActive) return;
             _currentBehaviour?.Invoke();
-            CheckForButtonDown();
-            CheckForButtonUp();
+            _inputModule.Check();
         }
 
         private void OnEnable() => _onStepLoaded.AddAction(ActivateIfHave);
@@ -47,44 +47,40 @@ namespace DeviceLogic
             _isActive = true;
             _boundaryObject.SetActive(false);
             _data._washingMachine.gameObject.SetActive(false);
-            _onButtonDown += StartDrawing;
+            _inputModule.ONButtonDown += StartDrawing;
         }
 
         private void StartDrawing()
         {
             _currentBehaviour = new DrawingBoundariesBehaviour(_boundaryObject, _drawingPoint, _data._scales);
-            _onButtonDown -= StartDrawing;
-            _onButtonUp += StartSettingHeight;
+            _inputModule.ONButtonDown -= StartDrawing;
+            _inputModule.ONButtonUp += CheckSettingHeight;
         }
 
+        private void CheckSettingHeight()
+        {
+            _currentBehaviour = null;
+            _onConfirmButtonPressed.AddAction(SetDevice);
+            _inputModule.ONButtonUp -= CheckSettingHeight;
+            _inputModule.ONButtonDown += StartSettingHeight;
+            _onBoundariesDrawn.Invoke();
+        }
         private void StartSettingHeight()
         {
             _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
-            _onButtonUp -= StartSettingHeight;
-            _onButtonDown += SetDevice;
-            _onBoundariesDrawn.Invoke();
+            _inputModule.ONButtonDown -= StartSettingHeight;
+            _inputModule.ONButtonUp += CheckSettingHeight;
         }
 
         private void SetDevice()
         {
+            _inputModule.ONButtonDown -= CheckSettingHeight;
+            _onConfirmButtonPressed.RemoveAction(SetDevice);
             _currentBehaviour = new DeviceSettingBehaviour(_data._washingMachine.gameObject, _boundaryObject,
                 _data._scales, _startMachineScale);
-            _onButtonDown -= SetDevice;
+            _inputModule.ONButtonDown -= SetDevice;
             _onDrawingComplete.Invoke();
             _isActive = false;
-        }
-
-
-        private void CheckForButtonDown()
-        {
-            if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)) 
-                _onButtonDown?.Invoke();
-        }
-
-        private void CheckForButtonUp()
-        {
-            if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger)) 
-                _onButtonUp?.Invoke();
         }
     }
 }
