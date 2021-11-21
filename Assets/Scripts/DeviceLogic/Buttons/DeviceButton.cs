@@ -4,10 +4,18 @@ namespace DeviceLogic
 {
     public abstract class DeviceButton: MonoBehaviour
     {
-        [SerializeField] private Canvas _footnote;
-        
-        public virtual void Activate() => _footnote.gameObject.SetActive(true);
+        [SerializeField] private Transform _footnotePoint;
 
-        public virtual void Deactivate() => _footnote.gameObject.SetActive(false);
+        public Transform FootnotePoint => _footnotePoint;
+
+        public virtual void Activate()
+        {
+            
+        }
+
+        public virtual void Deactivate()
+        {
+            
+        }
     }
 }

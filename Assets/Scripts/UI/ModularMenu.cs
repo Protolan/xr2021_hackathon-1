@@ -1,13 +1,16 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Architecture;
+using ScriptableSystem.GameEvent;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI
 {
-    public class ModularMenu : UIElement
+    public class ModularMenu : MonoBehaviour
     {
+        [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private TMP_Text _mainText;
         [SerializeField] private Image _image;
         [SerializeField] private TMP_Text _imageText;
@@ -18,14 +21,18 @@ namespace UI
         [SerializeField] private GameObject _twoButtonModule;
         [SerializeField] private Button _redrawButton;
 
+        private void OnEnable() => _onStepLoaded.AddAction(LoadData);
 
-        protected override void LoadData(Step step)
+        private void OnDisable() => _onStepLoaded.RemoveAction(LoadData);
+
+
+        private void LoadData(Step step)
         {
             if (!step.ContainsFeature(StepFeature.ModularMenu)) _parentObject.SetActive(false);
             else
             {
                 _parentObject.SetActive(true);
-                UpdateContent(step.GetFeatureData(StepFeature.ModularMenu) as ModularMenuData);
+                UpdateContent(step.ModularMenuData);
             }
         }
 
@@ -48,14 +55,14 @@ namespace UI
             {
                 _okButton.gameObject.SetActive(true);
             }
-            
+
             if (data._features.Contains(ModularMenuFeature.Title))
             {
                 _title.SetText(data._titleText);
                 _title.gameObject.SetActive(true);
             }
 
-            if(data._features.Contains(ModularMenuFeature.Cancel))
+            if (data._features.Contains(ModularMenuFeature.Cancel))
             {
                 _twoButtonModule.gameObject.SetActive(true);
                 _cancelButton.gameObject.SetActive(true);
@@ -67,7 +74,7 @@ namespace UI
                 _cancelButton.gameObject.SetActive(false);
                 _redrawButton.gameObject.SetActive(true);
             }
-            
+
             if (data._features.Contains(ModularMenuFeature.Image))
             {
                 _image.sprite = data._sprite;
@@ -80,8 +87,6 @@ namespace UI
                 _mainText.SetText(data._mainText);
                 _mainText.gameObject.SetActive(true);
             }
-            
-            
         }
     }
 }

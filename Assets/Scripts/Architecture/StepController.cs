@@ -1,37 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using ScriptableSystem.GameEvent;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Voice;
 
 namespace Architecture
 {
     public class StepController : SerializedMonoBehaviour
     {
-        [SerializeField] private Dictionary<string, string> _dictionary;
         [SerializeField] private Step _firstStep;
-        [SerializeField] private Step[] _steps;
+        [SerializeField] private List<Step> _steps;
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onStepChanged;
         [SerializeField] private GameEvent _onStepEnded;
 
 
         [Button]
-        public void CreateDictionaryFromFile(string filePath)
+        private void CreateStepsFromFile(string filePath)
         {
-            var fileReader = new FileReader(filePath);
-            _dictionary = fileReader.CreateTextDictionary();
+            var builder = new StepBuilder();
+            _steps = builder.CreateStepsFromFile(filePath);
         }
 
         [Button]
-        public void SetTextToSteps()
+        private void SetButtonActionSteps(string filePath)
         {
-            foreach (var step in _steps)
-            {
-                if(!_dictionary.ContainsKey(step.name)) continue;
-                step.SetText(_dictionary[step.name]);
-            }
+            var builder = new StepBuilder();
+            builder.SetButtonActionFromFile(filePath, _steps);
         }
+
+        [Button]
+        private void SetStepsConditions(GameEvent condition)
+        {
+            var builder = new StepBuilder();
+            builder.SetStepTransitions(_steps, condition);
+        }
+
+        [Button]
+        private void SetVoiceActor(string audioFilesFolderPath)
+        {
+            var builder = new StepBuilder();
+            builder.SetVoiceActingFromFiles(_steps, audioFilesFolderPath);
+        }
+
+        [Button]
+        private void SetListeners(string filePath, VoiceIntent intent)
+        {
+            var builder = new StepBuilder();
+            builder.SetVoiceListenersFromFile(_steps, filePath, intent);
+        }
+
+
         private Step _currentStep;
 
         private void Start()

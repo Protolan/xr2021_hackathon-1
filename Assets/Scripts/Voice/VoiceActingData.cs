@@ -4,9 +4,8 @@ using UnityEngine;
 namespace Architecture
 {
     [Serializable]
-    public class VoiceActingData: Data
+    public class VoiceActingData
     {
         public AudioClip _clip;
-        public override StepFeature FeatureType => StepFeature.VoiceActing;
     }
 }

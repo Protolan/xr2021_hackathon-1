@@ -6,9 +6,8 @@ using UnityEngine;
 namespace Architecture
 {
     [Serializable]
-    public class ModularMenuData: Data
+    public class ModularMenuData
     {
-        public override StepFeature FeatureType => StepFeature.ModularMenu;
         public string _mainText;
 
         [ShowIf("@ContainsFeature(ModularMenuFeature.Image)")]

@@ -5,10 +5,9 @@ using UnityEngine;
 namespace Voice
 {
     [Serializable]
-    public class VoiceListenerData: Data
+    public class VoiceListenerData
     {
         public float _listenDuration;
         public VoiceIntent[] _intents;
-        public override StepFeature FeatureType => StepFeature.VoiceListener;
     }
 }

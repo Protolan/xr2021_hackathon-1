@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Globalization;
-using Architecture;
+﻿using Architecture;
 using Facebook.WitAi;
 using Facebook.WitAi.CallbackHandlers;
 using Facebook.WitAi.Lib;
@@ -14,6 +12,7 @@ namespace Voice
     {
         [SerializeField] private AppVoiceExperience _voice;
         [SerializeField] private StepGameEvent _onStepLoaded;
+        [SerializeField] private GameEvent _onVoiceActorFinished;
 
         private VoiceListenerData _data;
         private bool _isActive;
@@ -33,14 +32,9 @@ namespace Voice
         protected override void OnHandleResponse(WitResponseNode response)
         {
             if (!_isActive) return;
-            Debug.Log("Запрос принял");
             WitResponseNode handleIntent = response.GetFirstIntent();
-            var entityName = handleIntent["entities"][0].Value;
-            if (!CheckForIntent(handleIntent))
-            {
-                Debug.Log("Намерение не найдено, пробуем еще раз");
+            if (!CheckForIntent(handleIntent)) 
                 _voice.Activate();
-            }
         }
 
         private bool CheckForIntent(WitResponseNode handleIntent)
@@ -60,44 +54,27 @@ namespace Voice
         private bool IntentEquals(VoiceIntent intent, WitResponseNode handleIntent)
         {
             return intent.Name == handleIntent["name"].Value
-                   && String2Float(handleIntent["confidence"].Value) >= intent.Confidence;
+                   && handleIntent["confidence"].Value.String2Float() >= intent.Confidence;
         }
 
         private void StartListeningIfHave(Step step)
         {
             if (step.ContainsFeature(StepFeature.VoiceListener))
             {
-                Debug.Log("Начинаю слушать");
-                _isActive = true;
-                _data = step.GetFeatureData(StepFeature.VoiceListener) as VoiceListenerData;
-                StartCoroutine(StartListening());
+                _data = step.ListenerData;
+                _onVoiceActorFinished.AddAction(WaitForVoiceActorFinished);
             }
             else
-                _isActive = false;
+                DeactivateListener();
         }
 
-        private IEnumerator StartListening()
+        private void DeactivateListener() => _isActive = false;
+
+        private void WaitForVoiceActorFinished()
         {
-            yield return new WaitForSeconds(1f);
+            _isActive = true;
             _voice.Activate();
-        }
-
-        private float String2Float(string line)
-        {
-            float res;
-            try
-            {
-                string sp = NumberFormatInfo.CurrentInfo.CurrencyDecimalSeparator;
-                line = line.Replace(".", sp);
-                line = line.Replace(",", sp);
-                res = float.Parse(line);
-            }
-            catch
-            {
-                res = 0f;
-            }
-
-            return res;
+            _onVoiceActorFinished.RemoveAction(WaitForVoiceActorFinished);
         }
     }
 }

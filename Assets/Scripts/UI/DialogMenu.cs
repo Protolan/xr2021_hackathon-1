@@ -1,24 +1,31 @@
-﻿using Architecture;
+﻿using System;
+using Architecture;
+using ScriptableSystem.GameEvent;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI
 {
-    public class DialogMenu : UIElement
+    public class DialogMenu: MonoBehaviour
     {
+        [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private TMP_Text _text;
         [SerializeField] private Button _button;
         [SerializeField] private GameObject _parentObject;
-                
 
-        protected override void LoadData(Step step)
+
+        private void OnEnable() => _onStepLoaded.AddAction(LoadData);
+
+        private void OnDisable() => _onStepLoaded.RemoveAction(LoadData);
+
+        private void LoadData(Step step)
         {
             if (!step.ContainsFeature(StepFeature.DialogMenu)) _parentObject.SetActive(false);
             else
             {
                 _parentObject.SetActive(true);
-                UpdateContent(step.GetFeatureData(StepFeature.DialogMenu) as DialogMenuData);
+                UpdateContent(step.DialogMenuData);
             }
         }
 
