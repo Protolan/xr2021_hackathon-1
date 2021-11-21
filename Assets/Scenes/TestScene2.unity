@@ -853,7 +853,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _firstStep: {fileID: 0}
   _steps:
   - {fileID: 11400000, guid: cdeed079ebad7ad418279551db18f3a0, type: 2}
   - {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
