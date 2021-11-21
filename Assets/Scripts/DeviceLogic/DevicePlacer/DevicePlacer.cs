@@ -35,7 +35,6 @@ namespace DeviceLogic.DevicePlacer
             else
             {
                 _isActive = false;
-                _device.gameObject.SetActive(false);
                 _device.MakeNormal();
             }
         }

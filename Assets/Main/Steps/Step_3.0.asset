@@ -21,22 +21,31 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 80bd69e2433604a4bb4108f98782b1f6, type: 2}
+    _condition: {fileID: 11400000, guid: 212ca58236720324188d1ee7cc6d3407, type: 2}
+  - _nextStep: {fileID: 11400000, guid: 784bb14d8ee58724ea42c4d104d315df, type: 2}
+    _condition: {fileID: 11400000, guid: 7c24714a5218fae409ea32a2d3e8f930, type: 2}
+  - _nextStep: {fileID: 11400000, guid: e12101f540f17044f877765922946402, type: 2}
+    _condition: {fileID: 11400000, guid: 64df2eab78fe4854fb30955ef3fc892c, type: 2}
+  _features: 050000000400000001000000
   _modularMenuData:
-    _mainText: 
+    _mainText: What went wrong?
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: What went wrong?
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 621529dc65026f44eab89785a4bd471b, type: 3}
   _voiceListenerData:
     _listenDuration: 0
-    _intents: []
+    _intents:
+    - {fileID: 11400000, guid: 64df2eab78fe4854fb30955ef3fc892c, type: 2}
+    - {fileID: 11400000, guid: 64df2eab78fe4854fb30955ef3fc892c, type: 2}
+    - {fileID: 11400000, guid: 212ca58236720324188d1ee7cc6d3407, type: 2}
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

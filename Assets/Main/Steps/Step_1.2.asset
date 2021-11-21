@@ -21,19 +21,22 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: d214414d974fd3440b27f3e48c68e822, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 0100000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Place the controller ring on top of your item, then press the trigger
+      button to continue. You can skip if it looks accurate
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
-    _features: 
+    _features: 04000000
   _dialogDialogMenuData:
     _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 219292b9c02435149a29e452ec1d6103, type: 3}
   _voiceListenerData:
     _listenDuration: 0
     _intents: []

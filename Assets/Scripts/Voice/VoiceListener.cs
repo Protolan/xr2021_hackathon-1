@@ -1,4 +1,5 @@
-﻿using Architecture;
+﻿using System.Collections;
+using Architecture;
 using Facebook.WitAi;
 using Facebook.WitAi.CallbackHandlers;
 using Facebook.WitAi.Lib;
@@ -27,6 +28,7 @@ namespace Voice
         {
             base.OnDisable();
             _onStepLoaded.RemoveAction(StartListeningIfHave);
+            _onVoiceActorFinished.RemoveAction(WaitForVoiceActorFinished);
         }
 
         protected override void OnHandleResponse(WitResponseNode response)
@@ -73,8 +75,15 @@ namespace Voice
         private void WaitForVoiceActorFinished()
         {
             _isActive = true;
-            _voice.Activate();
+            StartCoroutine(StartListening());
             _onVoiceActorFinished.RemoveAction(WaitForVoiceActorFinished);
         }
+
+        private IEnumerator StartListening()
+        {
+            yield return new WaitForSeconds(0.5f);
+            _voice.Activate();
+        }
+        
     }
 }

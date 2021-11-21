@@ -10,5 +10,6 @@
         VoiceListener,
         DeviceDrawer,
         DevicePlacing,
+        PlayerChoose,
     }
 }

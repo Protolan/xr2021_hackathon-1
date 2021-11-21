@@ -21,14 +21,18 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  - _nextStep: {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
+    _condition: {fileID: 11400000, guid: d90dbec23323b694491b23d8636e1e5c, type: 2}
+  _features: 0100000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Nice job! if it looks accurate press ok or repeat the scan
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
-    _features: 
+    _features: 02000000
   _dialogDialogMenuData:
     _text: 
     _hasButton: 1

@@ -21,8 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 163ad3a6c7e71224381a2aee4c8ffe52, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -30,13 +32,13 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: You could use the 7 programe for wool. Turn the dial to 7.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 4736e99401e3282409052e4cee88ab92, type: 3}
   _voiceListenerData:
     _listenDuration: 0
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: Btn_program
+    _footnoteText: Turn to program 7

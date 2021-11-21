@@ -21,19 +21,23 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  - _nextStep: {fileID: 11400000, guid: cb864fd4954daad4d9adc8d330975efa, type: 2}
+    _condition: {fileID: 11400000, guid: d90dbec23323b694491b23d8636e1e5c, type: 2}
+  _features: 0400000001000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Is your problem solved?
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
-    _features: 
+    _features: 01000000
   _dialogDialogMenuData:
-    _text: 
+    _text: Is your problem solved?
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 8b67aa761cffe3f489cdc955bc191fbd, type: 3}
   _voiceListenerData:
     _listenDuration: 0
     _intents: []

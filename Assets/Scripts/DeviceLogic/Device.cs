@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Architecture;
 using ScriptableSystem.GameEvent;
@@ -18,16 +19,17 @@ namespace DeviceLogic
         [Button]
         private void MakeDictionary()
         {
+            foreach (var button in _buttonArray) button.SetFootnotePoint();
             _buttons = _buttonArray.ToDictionary(x => x.name);
         }
         
-        
-        
         private DeviceButton _currentButton;
-        
-        
-        
-        
+
+        private void Start()
+        {
+            foreach (var button in _buttonArray) button.gameObject.SetActive(false);
+        }
+
         private void OnEnable() => _onStepChanged.AddAction(StartActionIfHave);
 
         private void OnDisable() => _onStepChanged.RemoveAction(StartActionIfHave);
@@ -40,7 +42,7 @@ namespace DeviceLogic
                 _footnote.gameObject.SetActive(false);
                 _currentButton = null;
             }
-            if (!step.ContainsFeature(StepFeature.DeviceAction))
+            if (step.ContainsFeature(StepFeature.DeviceAction))
             {
                 _currentButton = _buttons[step.DeviceButtonActionData._buttonID];
                 _currentButton.Activate();

@@ -26,7 +26,7 @@ namespace Architecture
         [SerializeField] private VoiceListenerData _voiceListenerData;
         [ShowIf("@ContainsFeature(StepFeature.DeviceAction)")]
         [SerializeField] private DeviceButtonActionData _deviceButtonActionData;
-        
+
         private void DeleteDuplicates() => _features = Features.Distinct().ToList();
 
         public bool ContainsFeature(StepFeature feature) => Features.Contains(feature);

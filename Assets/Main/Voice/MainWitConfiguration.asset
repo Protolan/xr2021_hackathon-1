@@ -21,8 +21,35 @@ MonoBehaviour:
     createdAt: 2021-11-18T14:26:16-0800
   configId: 127bdf6fdb53a3045a1c4eeb978fbd72
   clientAccessToken: TLOTHAYOLBTDF7GMMXAWZQTEI7JKDVPX
-  entities: []
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 1027675941417171
+    name: jeans
+    lookups:
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: jeans
+      synonyms:
+      - jeans
   intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 420812982849298
+    name: Laundry_tips
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 729583101335084
+    name: problem_machinewont_starting
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 590950092189099
+    name: problem_washingCycle
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1451768048558261
+    name: problem_water_not_draining
+    entities: []
   - witConfiguration: {fileID: 11400000}
     id: 473149664102359
     name: startGuide
@@ -32,8 +59,20 @@ MonoBehaviour:
     name: startTroubleshooting
     entities: []
   - witConfiguration: {fileID: 11400000}
-    id: 1094461431317080
-    name: startWashing
+    id: 233852882179215
+    name: wash_cotton
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 979189592943641
+    name: wash_jeans
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1048091106042788
+    name: wash_sneakers
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 422553706099325
+    name: wash_wool
     entities: []
   - witConfiguration: {fileID: 11400000}
     id: 1096183097785907

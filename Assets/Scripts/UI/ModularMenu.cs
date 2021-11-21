@@ -17,7 +17,6 @@ namespace UI
         [SerializeField] private Button _okButton;
         [SerializeField] private Button _cancelButton;
         [SerializeField] private GameObject _parentObject;
-        [SerializeField] private TMP_Text _title;
         [SerializeField] private GameObject _twoButtonModule;
         [SerializeField] private Button _redrawButton;
 
@@ -44,7 +43,6 @@ namespace UI
             _okButton.gameObject.SetActive(false);
             _cancelButton.gameObject.SetActive(false);
             _redrawButton.gameObject.SetActive(false);
-            _title.gameObject.SetActive(false);
             _twoButtonModule.gameObject.SetActive(false);
         }
 
@@ -55,12 +53,7 @@ namespace UI
             {
                 _okButton.gameObject.SetActive(true);
             }
-
-            if (data._features.Contains(ModularMenuFeature.Title))
-            {
-                _title.SetText(data._titleText);
-                _title.gameObject.SetActive(true);
-            }
+            
 
             if (data._features.Contains(ModularMenuFeature.Cancel))
             {

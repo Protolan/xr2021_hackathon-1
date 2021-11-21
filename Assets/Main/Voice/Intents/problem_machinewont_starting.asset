@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21b87035fbf54970a576a37bd52bf6fa, type: 3}
-  m_Name: startWashing
+  m_Name: problem_machinewont_starting
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -33,7 +33,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _confidence: 0.553
-  _name: startWashing
+  _confidence: 0.55
+  _name: problem_machinewont_starting
   _hasEntity: 0
   _entityName: 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ScriptableSystem.GameEvent;
 using Sirenix.OdinInspector;
 using UnityEditor;
@@ -13,7 +14,6 @@ namespace Architecture
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onStepChanged;
         [SerializeField] private GameEvent _onStepEnded;
-
 #if UNITY_EDITOR
 
         [Button]
@@ -69,6 +69,13 @@ namespace Architecture
 
 
         private Step _currentStep;
+        
+
+        private void OnDisable()
+        {
+            UnsubscribeTransitions(_currentStep);
+        }
+
 
         private void Start()
         {
@@ -95,8 +102,6 @@ namespace Architecture
                 stepTransition.OnConditionComplete -= LoadNextStep;
             }
         }
-
-        private void OnDisable() => UnsubscribeTransitions(_currentStep);
 
         private void LoadNextStep(Step step)
         {

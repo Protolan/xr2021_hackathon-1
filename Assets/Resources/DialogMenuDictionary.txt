@@ -28,17 +28,14 @@
 <Step_4.2><Did you press the ON\OFF button?><2>
 <Step_4.3><Did you press the Start \ Pause button? Say "okay" if yes.><2>
 <Step_4.4><Is your problem solved?><2>
-<Step_4.5><To go back to the main menu say "Main Menu"><2>
 <Step_4.6><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_5.1><Is power plug connected correctly?><2>
 <Step_5.2><The electricity could be turned off in the house.><2>
 <Step_5.3><Is your problem solved?><2>
-<Step_5.4><To go back to the main menu say "Main Menu"><2>
 <Step_5.5><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_6.1><Drain hose might be blocked or twisted. Straighten or cleaning it might help.><2>
 <Step_6.2><The selected programe does not provide water drain, so you should start the drain manually.><2>
 <Step_6.3><Is your problem solved?><2>
-<Step_6.4><To go back to the main menu say "Main Menu"><2>
 <Step_6.5><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_7.0><What do you want to wash?><2>
 <Step_7.0_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about laundry tips for jeans, cotton, wool or sneakers><2>

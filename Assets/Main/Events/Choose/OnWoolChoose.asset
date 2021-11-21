@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
-  m_Name: Step_6.4
+  m_Script: {fileID: 11500000, guid: 27e7371cdef73464c9c0dc635de7f133, type: 3}
+  m_Name: OnWoolChoose
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -20,23 +20,16 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
-  _transitions: []
-  _features: 
-  _modularMenuData:
-    _mainText: 
-    _sprite: {fileID: 0}
-    _imageText: 
-    _titleText: 
-    _features: 
-  _dialogDialogMenuData:
-    _text: 
-    _hasButton: 1
-  _voiceActingData:
-    _clip: {fileID: 0}
-  _voiceListenerData:
-    _listenDuration: 0
-    _intents: []
-  _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    SerializationNodes:
+    - Name: _actions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Action, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

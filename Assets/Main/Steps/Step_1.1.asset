@@ -21,19 +21,25 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 5725b7b1402a94a4ca95d31e72fd8905, type: 2}
+    _condition: {fileID: 11400000, guid: 281493a2ae4a1c7479b0b2e916495a67, type: 2}
+  _features: 010000000400000006000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Hold your controller, on the front edge of your washing machine, then
+      press and hold the trigger button, draw a line from one side of the item to
+      another, then release the trigger button when you finished.
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: Hold your controller, on the front edge of your washing machine, then
+      press and hold the trigger button, draw a line from one side of the item to
+      another, then release the trigger button when you finished.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: ccc34cc29c6b9e9488869f91f6031b4b, type: 3}
   _voiceListenerData:
     _listenDuration: 0
     _intents: []
