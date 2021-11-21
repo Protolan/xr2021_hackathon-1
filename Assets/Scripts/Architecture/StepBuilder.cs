@@ -10,6 +10,7 @@ namespace Architecture
 {
     public class StepBuilder
     {
+    #if UNITY_EDITOR
         public List<Step> CreateStepsFromFile(string filePath)
         {
             var steps = new List<Step>();
@@ -99,5 +100,7 @@ namespace Architecture
         {
             return File.Exists(filePath) ? File.ReadAllLines(filePath) : null;
         }
+#endif
     }
+
 }

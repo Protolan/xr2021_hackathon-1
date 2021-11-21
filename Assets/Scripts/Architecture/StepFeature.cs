@@ -9,5 +9,6 @@
         VoiceActing,
         VoiceListener,
         DeviceDrawer,
+        DevicePlacing,
     }
 }

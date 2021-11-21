@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ScriptableSystem.GameEventParameterized
 {
-    public abstract class GameEventBase<TData> : SerializedScriptableObject
+    public class GameEventBase<TData> : SerializedScriptableObject
     {
         [SerializeField] [ReadOnly] private readonly List<Action<TData>> _actions = new List<Action<TData>>();
         
