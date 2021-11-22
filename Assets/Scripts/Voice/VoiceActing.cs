@@ -12,10 +12,12 @@ namespace Voice
         [SerializeField] private GameEvent _onClipFinished;
         [SerializeField] private AudioSource _source;
         [SerializeField] private GameEvent _onNotUnderstand;
+        [SerializeField] private Animator _animator;
 
         private Coroutine _currentPlaying;
         private AudioClip _notUnderstandClip;
-        
+        private static readonly int Speak = Animator.StringToHash("speak");
+
         private void OnEnable()
         {
             _onStepLoaded.AddAction(StartActingIfHave);
@@ -53,6 +55,7 @@ namespace Voice
 
         private void StartActing(AudioClip clip)
         {
+            _animator.SetBool(Speak, true);
             _source.clip = clip;
             _source.Play();
             _currentPlaying =  StartCoroutine(WaitForEnding(clip.length));
@@ -61,6 +64,7 @@ namespace Voice
         private IEnumerator WaitForEnding(float clipDuration)
         {
             yield return new WaitForSeconds(clipDuration);
+            _animator.SetBool(Speak, false);
             _onClipFinished.Invoke();
         }
     }

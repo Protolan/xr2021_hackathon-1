@@ -5,7 +5,6 @@
 <Step_2.7><SoapDrawer_Slot_3><Slot for fabric softeners>
 <Step_2.9><Btn_Program><You can select program here>
 <Step_2.10><Btn_temperature><You can set temperature here>
-<Step_2.11><SpecialButtons><Special buttons>
 <Step_2.12><Btn_Special_1><EcoTime>
 <Step_2.13><Btn_Special_2><Bleaching>
 <Step_2.14><Btn_Special_3><Spin control>
@@ -30,3 +29,4 @@
 <Step_11.1><Btn_program><Turn to program 13>
 <Step_11.2><Btn_temperature><Turn to 30>
 <Step_11.3><WashDrawer><Put your sneakers in washer>
+<Step_2.17><Indicators><These indicators will help you understand the status of the washing cycle.>

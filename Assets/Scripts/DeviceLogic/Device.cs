@@ -17,7 +17,7 @@ namespace DeviceLogic
         [SerializeField] private DeviceButton[] _buttonArray;
 
         [Button]
-        private void MakeDictionary()
+        private void MakeDictionary(string filePath)
         {
             foreach (var button in _buttonArray) button.SetFootnotePoint();
             _buttons = _buttonArray.ToDictionary(x => x.name);
@@ -27,7 +27,11 @@ namespace DeviceLogic
 
         private void Start()
         {
-            foreach (var button in _buttonArray) button.gameObject.SetActive(false);
+            foreach (var button in _buttonArray)
+            {
+                _footnote.gameObject.SetActive(false);
+                button.gameObject.SetActive(false);
+            }
         }
 
         private void OnEnable() => _onStepChanged.AddAction(StartActionIfHave);
@@ -44,8 +48,11 @@ namespace DeviceLogic
             }
             if (step.ContainsFeature(StepFeature.DeviceAction))
             {
+                Debug.Log(step.DeviceButtonActionData._buttonID);
+                if (!_buttons.ContainsKey(step.DeviceButtonActionData._buttonID)) return;
                 _currentButton = _buttons[step.DeviceButtonActionData._buttonID];
                 _currentButton.Activate();
+                _footnote.gameObject.SetActive(true);
                 _footnote.UpdateFootnote(step.DeviceButtonActionData._footnoteText, _currentButton.FootnotePoint.position);
             }
         }

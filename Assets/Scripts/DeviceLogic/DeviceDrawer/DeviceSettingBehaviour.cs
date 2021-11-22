@@ -24,7 +24,6 @@ namespace DeviceLogic
             _device.transform.localScale = _startMachineScale * (_boundaries.transform.localScale.x / _aspectRatio.x);
             _device.transform.rotation = _boundaries.transform.rotation;
             _device.SetActive(true);
-            _boundaries.SetActive(false);
         }
         public override void Invoke()
         {

@@ -258,6 +258,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+--- !u!1 &191617640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7096401569142495208, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &191617645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191617640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &217804979
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +374,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D_UI
       objectReference: {fileID: 0}
+    - target: {fileID: 6331591090849469525, guid: 6432f86ca06a2aa449ce70ee1da15425,
+        type: 3}
+      propertyPath: m_Name
+      value: Drain
+      objectReference: {fileID: 0}
     - target: {fileID: 6389780842343108706, guid: 6432f86ca06a2aa449ce70ee1da15425,
         type: 3}
       propertyPath: m_RootOrder
@@ -331,17 +387,17 @@ PrefabInstance:
     - target: {fileID: 6389780842343108706, guid: 6432f86ca06a2aa449ce70ee1da15425,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.16694935
+      value: 0.17935368
       objectReference: {fileID: 0}
     - target: {fileID: 6389780842343108706, guid: 6432f86ca06a2aa449ce70ee1da15425,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.16694935
+      value: 0.17935368
       objectReference: {fileID: 0}
     - target: {fileID: 6389780842343108706, guid: 6432f86ca06a2aa449ce70ee1da15425,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.16694935
+      value: 0.17935368
       objectReference: {fileID: 0}
     - target: {fileID: 6389780842343108706, guid: 6432f86ca06a2aa449ce70ee1da15425,
         type: 3}
@@ -401,6 +457,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 228697798}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &228697800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4859962530214302445, guid: 6432f86ca06a2aa449ce70ee1da15425,
+    type: 3}
+  m_PrefabInstance: {fileID: 228697798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228697801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6331591090849469525, guid: 6432f86ca06a2aa449ce70ee1da15425,
+    type: 3}
+  m_PrefabInstance: {fileID: 228697798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &228697802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228697801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca7a2355c1a4d13813d9e5d46ee44e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _footnotePoint: {fileID: 228697800}
 --- !u!114 &228697806 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 228697806, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -581,6 +662,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca7a2355c1a4d13813d9e5d46ee44e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &427097527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8547270298166542956, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &427097532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427097527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &508220417 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 508220415, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -996,6 +1128,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca7a2355c1a4d13813d9e5d46ee44e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1006555682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5372893583743999250, guid: 5a7c329ab16f1ce41a28337d2d4f0dbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1358769901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006555683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006555682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31fbd1d4903401dac5cfa950a96fef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
+  _stepToDeactivate: {fileID: 11400000, guid: b5df0ce119573be4e9c3789ccfb7fea1, type: 2}
 --- !u!114 &1267761711 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1267761708, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -1008,6 +1160,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca7a2355c1a4d13813d9e5d46ee44e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1315842243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1111930713751342421, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1315842245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111930713751342423, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315842243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1315842248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315842243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1340208548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,6 +1783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547270298567769099, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: _okButton
+      value: 
+      objectReference: {fileID: 1315842245}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a667de1313ebc469123baaeba69e48, type: 3}
 --- !u!4 &1531528665 stripped
@@ -1834,6 +2054,57 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1601221229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8547270299765447523, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1601221234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601221229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1648968579 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1648968576, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -1927,7 +2198,7 @@ PrefabInstance:
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 108.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
@@ -1937,27 +2208,27 @@ PrefabInstance:
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 212.40714
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -68.373314
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7109734957133465848, guid: 5d4c48308e4d2e44aae872b4cd8850ab,
         type: 3}
@@ -1992,6 +2263,57 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1732295013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1749579060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4816963823598718280, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1749579065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749579060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1955651725}
+          m_TargetAssemblyTypeName: DeviceLogic.DeviceBoundaryDrawer, Assembly-CSharp
+          m_MethodName: ButtonSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1751977725 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1751977722, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -2558,5 +2880,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebugUI
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4164657906197750750, guid: a004292c7bdb60e4b8de409c800ffb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a004292c7bdb60e4b8de409c800ffb6e, type: 3}
