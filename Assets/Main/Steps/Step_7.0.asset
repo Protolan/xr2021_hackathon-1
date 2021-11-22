@@ -12,35 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_7.0
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: 322642c104db32847acfa8fe2100bdce, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 020000000500000004000000
+  _transitions: []
+  _features: 
   _modularMenuData:
-    _mainText: What do you want to wash?
+    _mainText: 
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: What do you want to wash?
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: a35aa0c0aab482745b6b582efc8e8481, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _notUnderStandClip: {fileID: 8300000, guid: 1eb05e0c02a9abf4195a77721d01c5be,
-      type: 3}
-    _intents:
-    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+    _notUnderStandClip: {fileID: 0}
+    _intents: []
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

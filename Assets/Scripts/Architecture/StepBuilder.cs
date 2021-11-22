@@ -11,9 +11,8 @@ namespace Architecture
     public class StepBuilder
     {
 #if UNITY_EDITOR
-        public List<Step> CreateStepsFromFile(string filePath)
+        public List<Step> CreateStepsFromFile(string filePath, List<Step> steps)
         {
-            var steps = new List<Step>();
             var lines = CreateLines(filePath);
             if (lines == null) return steps;
 
@@ -58,6 +57,7 @@ namespace Architecture
             for (int i = 1; i < steps.Count; i++)
                 steps[i - 1].Transitions.Add(new Transition(steps[i], condition));
         }
+        
 
         public void SetMainMenuExitSteps(string filePath, List<Step> steps, Step mainMenuStep, GameEvent condition)
         {
@@ -103,7 +103,7 @@ namespace Architecture
             }
         }
 
-        public void SetVoiceListenersFromFile(List<Step> steps, string filePath, VoiceIntent intent)
+        public void SetVoiceListenersFromFile(List<Step> steps, string filePath, VoiceIntent intent, AudioClip defaultClip)
         {
             var lines = CreateLines(filePath);
             if (lines == null) return;
@@ -119,6 +119,7 @@ namespace Architecture
                 if (!stepDictionary[variables[0]].ContainsFeature(StepFeature.VoiceListener))
                     stepDictionary[variables[0]].Features.Add(StepFeature.VoiceListener);
                 stepDictionary[variables[0]].ListenerData._intents = new[] { intent };
+                stepDictionary[variables[0]].ListenerData._notUnderStandClip = defaultClip;
             }
         }
 

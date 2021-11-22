@@ -3,7 +3,6 @@
 <Step_1.2><Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate><1>
 <Step_1.3><Nice job! if it looks accurate press ok or repeat the scan><2>
 <Step_1.4><I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?><1>
-<Step_1.4_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me for a guide, about laundry tips or I can help you with a problem><2>
 <Step_2.1><Okay! Let's go through the control panel first.><2>
 <Step_2.2><That button turns on the washing machine. Press it to start preparing washing cycle.><2>
 <Step_2.3><Cool! That's detergent dispenser, open it and say "ok".><2>
@@ -23,7 +22,6 @@
 <Step_2.17><These indicators will help you understand the status of the washing cycle.><2>
 <Step_2.18><Nice job! You've completed basic tour on your washing machine. If you want to get some tips on washing press next \ say OK><2>
 <Step_3.0><What went wrong?><2>
-<Step_3.0_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about the washing cycle,  washing machine starting problems or draining problems><2>
 <Step_4.1><Is the door closed tight?><2>
 <Step_4.2><Did you press the ON\OFF button?><2>
 <Step_4.3><Did you press the Start \ Pause button? Say "okay" if yes.><2>
@@ -38,7 +36,6 @@
 <Step_6.3><Is your problem solved?><1>
 <Step_6.5><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_7.0><What do you want to wash?><2>
-<Step_7.0_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about laundry tips for jeans, cotton, wool or sneakers><2>
 <Step_8.1><You could use the 9 programe for jeans. Turn the dial to 9.><2>
 <Step_8.2><The perfect temperature for jeans is 40. Set it up.><2>
 <Step_9.1><You could use the 2nd programe for cotton. Turn the dial to 2.><2>
