@@ -1,32 +1,11 @@
 fileFormatVersion: 2
-guid: 50e78196bed800b4d95bbcdcdaf6a3ac
+guid: ed923c6991771c9409e4a7b2e94411eb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -2515943142026272911
-    second: Armature|turn_head_bottom_eve
-  - first:
-      74: -1829663449361698068
-    second: Armature|turn_head_L_diagonal_eve
-  - first:
-      74: -6286222964409050006
-    second: Armature|turn_head_L_diagonal_up
-  - first:
-      74: -6150258019252916506
-    second: Armature|turn_head_L_eve
-  - first:
-      74: 3272425056600827337
-    second: Armature|turn_head_R_diagonal_eve
-  - first:
-      74: -2527182237700821161
-    second: Armature|turn_head_R_diagonal_up
-  - first:
-      74: 3289087943842154791
-    second: Armature|turn_head_R_eve
-  - first:
-      74: -4825010400046039905
-    second: Armature|turn_head_top_eve
+      74: 6269947183609997698
+    second: Armature|Idle_eve
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -110,7 +89,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Armature
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
