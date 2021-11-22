@@ -12,19 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_1.1
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 0
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
   _transitions:
   - _nextStep: {fileID: 11400000, guid: 5725b7b1402a94a4ca95d31e72fd8905, type: 2}
-    _condition: {fileID: 11400000, guid: 281493a2ae4a1c7479b0b2e916495a67, type: 2}
-  _features: 010000000400000006000000
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 010000000400000002000000
   _modularMenuData:
     _mainText: Hold your controller, on the front edge of your washing machine, then
       press and hold the trigger button, draw a line from one side of the item to

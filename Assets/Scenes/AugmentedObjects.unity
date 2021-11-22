@@ -740,7 +740,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1510371515}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &504677814
+--- !u!114 &504677819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1208,7 +1208,6 @@ GameObject:
   - component: {fileID: 1027480169}
   - component: {fileID: 1027480168}
   - component: {fileID: 1027480167}
-  - component: {fileID: 1027480166}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1216,25 +1215,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1027480166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027480165}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 119
-  pointer: {fileID: 0}
-  sortOrder: 0
 --- !u!114 &1027480167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1788,7 +1768,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 79859989f8c0e11478782cd772ec5bfc, type: 2}
   - {fileID: 11400000, guid: 475c1c909628e60419ce525a53200cf7, type: 2}
   - {fileID: 11400000, guid: becc9800803640145b83cd01261dd46a, type: 2}
-  - {fileID: 11400000, guid: 96f332c48715cb5498ecb4dc225264fd, type: 2}
   - {fileID: 11400000, guid: 80bd69e2433604a4bb4108f98782b1f6, type: 2}
   - {fileID: 11400000, guid: 4e6702df78a3f9144baf5bdd001c1ad7, type: 2}
   - {fileID: 11400000, guid: 6013e0c35e8033447acf29c5453fa7e7, type: 2}
@@ -1803,7 +1782,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d15d9f955eca4ca4aa5946f21286fc42, type: 2}
   - {fileID: 11400000, guid: f23a7f241b9f584459b522c68b68b3d1, type: 2}
   - {fileID: 11400000, guid: 2d4ef7dd249aba84aa6b78384ce25ec5, type: 2}
-  - {fileID: 11400000, guid: 322642c104db32847acfa8fe2100bdce, type: 2}
   - {fileID: 11400000, guid: d55228caa501d6047a18a76cc0ffeb51, type: 2}
   - {fileID: 11400000, guid: 470119ef30efff44c8143ff0273ee89a, type: 2}
   - {fileID: 11400000, guid: ee5ec4c260d9ab04195ca3a18c39d12b, type: 2}
@@ -2360,7 +2338,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1510371515}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1695114797
+--- !u!114 &1695114802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -12,35 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_2.8
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: 27e5641f0b0366a4391b8edfe9600147, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 020000000500000004000000
+  _transitions: []
+  _features: 
   _modularMenuData:
-    _mainText: If everything is clear close detergent dispencer and say "ok"
+    _mainText: 
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: If everything is clear close detergent dispencer and say "ok"
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: ac20c4f8b5b691c4886445c3bc1ea177, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _notUnderStandClip: {fileID: 8300000, guid: a5669a6344f251f4286aa463a96f4939,
-      type: 3}
-    _intents:
-    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+    _notUnderStandClip: {fileID: 0}
+    _intents: []
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

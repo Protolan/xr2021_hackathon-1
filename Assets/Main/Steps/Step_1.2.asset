@@ -12,32 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_1.2
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: d214414d974fd3440b27f3e48c68e822, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0100000004000000
+  _transitions: []
+  _features: 
   _modularMenuData:
-    _mainText: Place the controller ring on top of your item, then press the trigger
-      button to continue. You can skip if it looks accurate
+    _mainText: 
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
-    _features: 04000000
+    _features: 
   _dialogDialogMenuData:
-    _text: Place the controller ring on top of your item, then press the trigger
-      button to continue. You can skip if it looks accurate
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: 219292b9c02435149a29e452ec1d6103, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []

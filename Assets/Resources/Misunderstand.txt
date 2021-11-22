@@ -1,0 +1,3 @@
+﻿<Step_1.4><I'm sorry, I did not understand you. Can you repeat the question? You can ask me for a guide, about laundry tips or I can help you with a problem><2>
+<Step_3.0><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about the washing cycle,  washing machine starting problems or draining problems><2>
+<Step_7.0><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about laundry tips for jeans, cotton, wool or sneakers><2>

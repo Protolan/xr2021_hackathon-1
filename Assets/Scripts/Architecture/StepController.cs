@@ -17,12 +17,12 @@ namespace Architecture
 
 #if UNITY_EDITOR
         [Button]
-        private void CreateStepsFromFile(VoiceIntent intent)
+        private void CreateStepsFromFile(VoiceIntent intent, AudioClip defaultClip)
         {
             CreateStepsFromFile("Assets/Resources/DialogMenuDictionary.txt");
             SetButtonActionSteps("Assets/Resources/AnnotationMenuDictionary.txt");
             SetStepsConditions(intent);
-            SetListeners("Assets/Resources/VoiceListenerData.txt", intent);
+            SetListeners("Assets/Resources/VoiceListenerData.txt", intent, defaultClip);
             SetVoiceActor("Assets/Resources/Voice");
             SetCancelButtonSteps("Assets/Resources/CancelButton.txt");
             AssetDatabase.SaveAssets();
@@ -31,7 +31,7 @@ namespace Architecture
         private void CreateStepsFromFile(string filePath)
         {
             var builder = new StepBuilder();
-            _steps = builder.CreateStepsFromFile(filePath);
+            _steps = builder.CreateStepsFromFile(filePath, _steps);
         }
 
         private void SetCancelButtonSteps(string filePath)
@@ -68,10 +68,10 @@ namespace Architecture
             builder.SetVoiceActingFromFiles(_steps, audioFilesFolderPath);
         }
 
-        private void SetListeners(string filePath, VoiceIntent intent)
+        private void SetListeners(string filePath, VoiceIntent intent, AudioClip defaultClip)
         {
             var builder = new StepBuilder();
-            builder.SetVoiceListenersFromFile(_steps, filePath, intent);
+            builder.SetVoiceListenersFromFile(_steps, filePath, intent, defaultClip);
         }
 
         private void CreateStepsJson(string filePath)
