@@ -2537,6 +2537,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebugUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4164657906197750751, guid: a004292c7bdb60e4b8de409c800ffb6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4164657906197750750, guid: a004292c7bdb60e4b8de409c800ffb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a004292c7bdb60e4b8de409c800ffb6e, type: 3}
@@ -2624,7 +2629,7 @@ PrefabInstance:
     - target: {fileID: 5933915391979010415, guid: cda91695b23e4b04e97eafe3fdc3c524,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325326329981832812, guid: cda91695b23e4b04e97eafe3fdc3c524,
         type: 3}
