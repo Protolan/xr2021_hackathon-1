@@ -23,7 +23,7 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: You could use the 13 programe for jeans. Turn the dial to 13.
+    _text: You could use the 13 programe for sneakers. Turn the dial to 13.
     _hasButton: 1
   _voiceActingData:
     _clip: {fileID: 8300000, guid: cc19b5d67885e5d43bdee7fedb32875f, type: 3}

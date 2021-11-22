@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - _nextStep: {fileID: 11400000, guid: a72d65a55edd7cf418fe6287d1b7e8d6, type: 2}
-    _condition: {fileID: 11400000, guid: d960a11165669d448a89dbeccc194704, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: Put the sneakers inside and close the door. Check if it closed tight.I

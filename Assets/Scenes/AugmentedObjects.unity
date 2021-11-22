@@ -900,6 +900,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   sortOrder: 0
+--- !u!95 &880792102 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1418212170439235450, guid: 88a667de1313ebc469123baaeba69e48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510371515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &905264313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1798,6 +1804,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4457379403882629138, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816963824279469782, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_text
+      value: Next
+      objectReference: {fileID: 0}
     - target: {fileID: 8547270298567769099, guid: 88a667de1313ebc469123baaeba69e48,
         type: 3}
       propertyPath: _okButton
@@ -2658,7 +2674,7 @@ MonoBehaviour:
   _onClipFinished: {fileID: 11400000, guid: df72db0ee80cdc2488b6f19249c93c0d, type: 2}
   _source: {fileID: 2004645735}
   _onNotUnderstand: {fileID: 11400000, guid: 483dd40b9ee22074586b4bc7aa5301da, type: 2}
-  _animator: {fileID: 0}
+  _animator: {fileID: 880792102}
 --- !u!4 &2004645737
 Transform:
   m_ObjectHideFlags: 0
