@@ -86,6 +86,7 @@ namespace DeviceLogic
 
         private void CheckSettingHeight()
         {
+            if(_buttonSelected) return;
             _currentBehaviour = null;
             _userInput.ONButtonUp -= StopDrawing;
             _userInput.ONButtonDown -= StartDrawing;
@@ -98,7 +99,6 @@ namespace DeviceLogic
 
         private void StartSettingHeight()
         {
-            Debug.Log(_buttonSelected);
             if (_buttonSelected) return;
             _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
             _userInput.ONButtonDown -= StartSettingHeight;

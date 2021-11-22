@@ -40,8 +40,12 @@ namespace DeviceLogic.DevicePlacer
 
         private void ActivatePlacing()
         {
-            
             _isPlacing = true;
+            if (Physics.Raycast(_laser.rayTransform.position, _laser.rayTransform.forward, out var hit, MaxDistant))
+            {
+                if (hit.transform.TryGetComponent(out PlacingPlatform placingPlatform))
+                    _device.transform.position = hit.point;
+            }
             _device.MakeTransparent();
             _userInput.ONButtonDown -= ActivatePlacing;
             _userInput.ONButtonUp += DeactivatePlacing;
