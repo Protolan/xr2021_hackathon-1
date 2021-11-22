@@ -14,6 +14,8 @@ namespace Architecture
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onStepChanged;
         [SerializeField] private GameEvent _onStepEnded;
+        [SerializeField] private Step _mainMenu;
+        [SerializeField] private GameEvent _activateBackMenu;
 
 #if UNITY_EDITOR
         [Button]
@@ -120,19 +122,13 @@ namespace Architecture
 
         private void LoadNextStep(Step step)
         {
-            Debug.Log(step.name);
+            if (_currentStep == _mainMenu) _activateBackMenu.Invoke();
             UnsubscribeTransitions(_currentStep);
-            Debug.Log("Unsubscribe");
             _currentStep = step;
-            Debug.Log("Set Current Step");
             _onStepEnded.Invoke();
-            Debug.Log("OnStepEndedInvoke");
             _onStepLoaded.Invoke(_currentStep);
-            Debug.Log("OnStepLoadedInvoke");
             _onStepChanged.Invoke();
-            Debug.Log("OnStepEndedChanged");
             SubscribeTransitions(_currentStep);
-            Debug.Log("Subscribe");
         }
     }
 }

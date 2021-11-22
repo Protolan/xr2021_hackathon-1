@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
+  m_Name: Step_5.1
+  m_EditorClassIdentifier: 
+  _transitions: []
+  _features: 
+  _modularMenuData:
+    _mainText: 
+    _sprite: {fileID: 0}
+    _imageText: 
+    _titleText: 
+    _features: 
+  _dialogDialogMenuData:
+    _text: 
+    _hasButton: 1
+  _voiceActingData:
+    _clip: {fileID: 0}
+  _voiceListenerData:
+    _notUnderStandClip: {fileID: 0}
+    _intents: []
+  _deviceButtonActionData:
+    _buttonID: 
+    _footnoteText: 

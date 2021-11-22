@@ -14,7 +14,6 @@ namespace UI
         [SerializeField] private Button _button;
         [SerializeField] private GameObject _parentObject;
 
-
         private void OnEnable() => _onStepLoaded.AddAction(LoadData);
 
         private void OnDisable() => _onStepLoaded.RemoveAction(LoadData);
