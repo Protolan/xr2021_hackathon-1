@@ -65,7 +65,13 @@ MonoBehaviour:
   - witConfiguration: {fileID: 11400000}
     id: 979189592943641
     name: wash_jeans
-    entities: []
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 922517438670738
+      name: jeans:jeans
+      lookups: []
+      roles: []
+      keywords: []
   - witConfiguration: {fileID: 11400000}
     id: 1048091106042788
     name: wash_sneakers
@@ -81,5 +87,9 @@ MonoBehaviour:
   - witConfiguration: {fileID: 11400000}
     id: 482024633134454
     name: wit$confirmation
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 320379932941298
+    name: wit$stop
     entities: []
   traits: []

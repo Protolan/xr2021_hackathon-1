@@ -10,7 +10,7 @@ namespace Architecture
 {
     public class StepBuilder
     {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         public List<Step> CreateStepsFromFile(string filePath)
         {
             var steps = new List<Step>();
@@ -25,8 +25,9 @@ namespace Architecture
                 string[] variables = line.Split(separatingStrings, System.StringSplitOptions.RemoveEmptyEntries);
                 var step = ScriptableObject.CreateInstance<Step>();
                 AssetDatabase.CreateAsset(step, $"Assets/Main/Steps/{variables[0]}.asset");
-                step.Features.Add(StepFeature.DialogMenu);
+                step.Features.Add(variables[2] == "1" ? StepFeature.ModularMenu : StepFeature.DialogMenu);
                 step.DialogMenuData._text = variables[1];
+                step.ModularMenuData._mainText = variables[1];
                 steps.Add(step);
             }
 
@@ -58,6 +59,39 @@ namespace Architecture
                 steps[i - 1].Transitions.Add(new Transition(steps[i], condition));
         }
 
+        public void SetMainMenuExitSteps(string filePath, List<Step> steps, Step mainMenuStep, GameEvent condition)
+        {
+            var lines = CreateLines(filePath);
+            if (lines == null) return;
+
+            string[] separatingStrings = { "<>", "<", ">" };
+            var stepDictionary = steps.ToDictionary(x => x.name);
+
+            foreach (var line in lines)
+            {
+                if (string.IsNullOrEmpty(line)) continue;
+                string[] variables = line.Split(separatingStrings, System.StringSplitOptions.RemoveEmptyEntries);
+                stepDictionary[variables[0]].Transitions.Clear();
+                stepDictionary[variables[0]].Transitions.Add(new Transition(mainMenuStep, condition));
+            }
+        }
+
+        public void SetCancelSteps(string filePath, List<Step> steps)
+        {
+            var lines = CreateLines(filePath);
+            if (lines == null) return;
+
+            string[] separatingStrings = { "<>", "<", ">" };
+            var stepDictionary = steps.ToDictionary(x => x.name);
+
+            foreach (var line in lines)
+            {
+                if (string.IsNullOrEmpty(line)) continue;
+                string[] variables = line.Split(separatingStrings, System.StringSplitOptions.RemoveEmptyEntries);
+                stepDictionary[variables[0]].ModularMenuData._features = new[] {ModularMenuFeature.Cancel};
+            }
+        }
+
         public void SetVoiceActingFromFiles(List<Step> steps, string folderPath)
         {
             foreach (var step in steps)
@@ -81,6 +115,7 @@ namespace Architecture
             {
                 if (string.IsNullOrEmpty(line)) continue;
                 string[] variables = line.Split(separatingStrings, System.StringSplitOptions.RemoveEmptyEntries);
+                Debug.Log(variables[0]);
                 if (!stepDictionary[variables[0]].ContainsFeature(StepFeature.VoiceListener))
                     stepDictionary[variables[0]].Features.Add(StepFeature.VoiceListener);
                 stepDictionary[variables[0]].ListenerData._intents = new[] { intent };

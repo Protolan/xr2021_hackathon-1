@@ -21,10 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0400000002000000
+  _transitions: []
+  _features: 
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -32,12 +30,12 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: Nice! The washing cycle will end in 103 minutes, don't forget about it!
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: 29b485a63415dbe4bb4e6ec3d0a2277d, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
     _buttonID: 

@@ -1,8 +1,8 @@
 <Step_1.0><Hello! My name is Helpy and I am your assistant. I can help you with your home appliances. Choose your item and we'll be ready to start><2>
-<Step_1.1><Hold your controller, on the front edge of your washing machine, then press and hold the trigger button, draw a line from one side of the item to another, then release the trigger button when you finished.><2>
-<Step_1.2><Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate><2>
+<Step_1.1><Hold your controller, on the front edge of your washing machine, then press and hold the trigger button, draw a line from one side of the item to another, then release the trigger button when you finished.><1>
+<Step_1.2><Place the controller ring on top of your item, then press the trigger button to continue. You can skip if it looks accurate><1>
 <Step_1.3><Nice job! if it looks accurate press ok or repeat the scan><2>
-<Step_1.4><I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?><2>
+<Step_1.4><I can share with you the basic information about washing machine, practical tips on washing or troubleshooting. How can I help you?><1>
 <Step_1.4_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me for a guide, about laundry tips or I can help you with a problem><2>
 <Step_2.1><Okay! Let's go through the control panel first.><2>
 <Step_2.2><That button turns on the washing machine. Press it to start preparing washing cycle.><2>
@@ -27,15 +27,15 @@
 <Step_4.1><Is the door closed tight?><2>
 <Step_4.2><Did you press the ON\OFF button?><2>
 <Step_4.3><Did you press the Start \ Pause button? Say "okay" if yes.><2>
-<Step_4.4><Is your problem solved?><2>
+<Step_4.4><Is your problem solved?><1>
 <Step_4.6><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_5.1><Is power plug connected correctly?><2>
 <Step_5.2><The electricity could be turned off in the house.><2>
-<Step_5.3><Is your problem solved?><2>
+<Step_5.3><Is your problem solved?><1>
 <Step_5.5><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_6.1><Drain hose might be blocked or twisted. Straighten or cleaning it might help.><2>
 <Step_6.2><The selected programe does not provide water drain, so you should start the drain manually.><2>
-<Step_6.3><Is your problem solved?><2>
+<Step_6.3><Is your problem solved?><1>
 <Step_6.5><Looks like you need help from the professional. Should I call the hotline?><2>
 <Step_7.0><What do you want to wash?><2>
 <Step_7.0_1><I'm sorry, I did not understand you. Can you repeat the question? You can ask me about laundry tips for jeans, cotton, wool or sneakers><2>

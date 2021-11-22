@@ -21,10 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: 163ad3a6c7e71224381a2aee4c8ffe52, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 020000000300000004000000
+  _transitions: []
+  _features: 
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -32,15 +30,13 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: Put the sneakers inside and close the door. Check if it closed tight.I
-      reccomend to wash not more than 2 pairs in 1 washing cycle. That way the result
-      would be better.
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: c088d767a5556024a84427b791465c2e, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: WashDrawer
-    _footnoteText: Put your sneakers in washer
+    _buttonID: 
+    _footnoteText: 

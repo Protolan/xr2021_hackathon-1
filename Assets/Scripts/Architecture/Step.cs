@@ -2,16 +2,16 @@
 using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.UI;
 using Voice;
 
 namespace Architecture
 {
-    [InlineEditor()]
     [CreateAssetMenu(
         menuName = "Create Step",
         fileName = "Step",
         order = 120)]
-    public class Step : SerializedScriptableObject
+    public class Step : ScriptableObject
     {
         [SerializeField] private List<Transition> _transitions = new List<Transition>();
         [OnValueChanged("DeleteDuplicates")]  
@@ -26,6 +26,7 @@ namespace Architecture
         [SerializeField] private VoiceListenerData _voiceListenerData;
         [ShowIf("@ContainsFeature(StepFeature.DeviceAction)")]
         [SerializeField] private DeviceButtonActionData _deviceButtonActionData;
+
 
         private void DeleteDuplicates() => _features = Features.Distinct().ToList();
 

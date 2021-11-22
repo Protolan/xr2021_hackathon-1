@@ -17,7 +17,7 @@ namespace Architecture
         public Action<Step> OnConditionComplete;
 
         public void WaitForCondition() => _condition.AddAction(CommitTransition);
-        public void CommitTransition() => OnConditionComplete.Invoke(_nextStep);
+        private void CommitTransition() => OnConditionComplete.Invoke(_nextStep);
         public void StopWaitingForCondition() => _condition.RemoveAction(CommitTransition);
     }
 }

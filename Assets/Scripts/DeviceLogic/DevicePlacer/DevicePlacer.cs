@@ -14,10 +14,10 @@ namespace DeviceLogic.DevicePlacer
 
         private bool _isActive = false;
         private bool _isPlacing = false;
-        private InputModule _input;
+        private UserInput _userInput;
         private const int MaxDistant = 3;
 
-        private void Awake() => _input = new InputModule();
+        private void Awake() => _userInput = new UserInput();
 
         private void OnEnable() => _onStepLoaded.AddAction(StartPlacingDeviceIfHave);
 
@@ -30,7 +30,7 @@ namespace DeviceLogic.DevicePlacer
                 _isActive = true;
                 _device.gameObject.SetActive(true);
                 _device.MakeTransparent();
-                _input.ONButtonDown += ActivatePlacing;
+                _userInput.ONButtonDown += ActivatePlacing;
             }
             else
             {
@@ -41,25 +41,26 @@ namespace DeviceLogic.DevicePlacer
 
         private void ActivatePlacing()
         {
+            
             _isPlacing = true;
             _device.MakeTransparent();
-            _input.ONButtonDown -= ActivatePlacing;
-            _input.ONButtonUp += DeactivatePlacing;
+            _userInput.ONButtonDown -= ActivatePlacing;
+            _userInput.ONButtonUp += DeactivatePlacing;
         }
 
         private void DeactivatePlacing()
         {
             _isPlacing = false;
             _device.MakeNormal();
-            _input.ONButtonUp -= DeactivatePlacing;
-            _input.ONButtonDown += ActivatePlacing;
+            _userInput.ONButtonUp -= DeactivatePlacing;
+            _userInput.ONButtonDown += ActivatePlacing;
         }
 
 
         private void Update()
         {
             if (!_isActive) return;
-            _input.Check();
+            _userInput.Check();
 
         }
 

@@ -12,20 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_1.3
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
   _transitions:
+  - _nextStep: {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
+    _condition: {fileID: 11400000, guid: 281c3882d2ab3484b8a7f770758b2204, type: 2}
   - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  - _nextStep: {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
-    _condition: {fileID: 11400000, guid: d90dbec23323b694491b23d8636e1e5c, type: 2}
   _features: 0100000004000000
   _modularMenuData:
     _mainText: Nice job! if it looks accurate press ok or repeat the scan
@@ -34,12 +25,12 @@ MonoBehaviour:
     _titleText: 
     _features: 02000000
   _dialogDialogMenuData:
-    _text: 
+    _text: Nice job! if it looks accurate press ok or repeat the scan
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 92027144e8e8bc14284e896650d10c69, type: 3}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
     _buttonID: 

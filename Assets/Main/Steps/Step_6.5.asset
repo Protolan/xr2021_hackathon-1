@@ -21,10 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
-    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0200000004000000
+  _transitions: []
+  _features: 
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -32,12 +30,12 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: Looks like you need help from the professional. Should I call the hotline?
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: f28a81b520dbcda4ca455c33493bfc5f, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
     _buttonID: 

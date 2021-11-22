@@ -7,7 +7,7 @@ namespace Voice
     [Serializable]
     public class VoiceListenerData
     {
-        public float _listenDuration;
+        public AudioClip _notUnderStandClip;
         public VoiceIntent[] _intents;
     }
 }

@@ -7,7 +7,7 @@ namespace ScriptableSystem.GameEventParameterized
 {
     public class GameEventBase<TData> : SerializedScriptableObject
     {
-        [SerializeField] [ReadOnly] private readonly List<Action<TData>> _actions = new List<Action<TData>>();
+        [SerializeField] private List<Action<TData>> _actions = new List<Action<TData>>();
         
         public void AddAction(Action<TData> action)
         {
@@ -21,7 +21,12 @@ namespace ScriptableSystem.GameEventParameterized
         
         public void Invoke(TData value)
         {
-            foreach (var action in _actions) action?.Invoke(value);
+            Debug.Log(_actions.Count);
+            foreach (var action in _actions)
+            {
+                Debug.Log(action.Method.Name);
+                action?.Invoke(value);
+            }
         }
     }
 }

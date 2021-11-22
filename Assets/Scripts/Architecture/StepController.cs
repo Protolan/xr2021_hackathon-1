@@ -14,8 +14,8 @@ namespace Architecture
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onStepChanged;
         [SerializeField] private GameEvent _onStepEnded;
-#if UNITY_EDITOR
 
+#if UNITY_EDITOR
         [Button]
         private void CreateStepsFromFile(VoiceIntent intent)
         {
@@ -24,6 +24,7 @@ namespace Architecture
             SetStepsConditions(intent);
             SetListeners("Assets/Resources/VoiceListenerData.txt", intent);
             SetVoiceActor("Assets/Resources/Voice");
+            SetCancelButtonSteps("Assets/Resources/CancelButton.txt");
             AssetDatabase.SaveAssets();
         }
 
@@ -31,6 +32,20 @@ namespace Architecture
         {
             var builder = new StepBuilder();
             _steps = builder.CreateStepsFromFile(filePath);
+        }
+
+        private void SetCancelButtonSteps(string filePath)
+        {
+            var builder = new StepBuilder();
+            builder.SetCancelSteps(filePath, _steps);
+        }
+
+        [Button]
+        private void SetMainMenuTransition(Step mainMenuStep, GameEvent condition)
+        {
+            var builder = new StepBuilder();
+            builder.SetMainMenuExitSteps("Assets/Resources/MainMenuReturn.txt", _steps, mainMenuStep, condition);
+            AssetDatabase.SaveAssets();
         }
 
 
@@ -98,19 +113,26 @@ namespace Architecture
         {
             foreach (var stepTransition in step.Transitions)
             {
-                stepTransition.StopWaitingForCondition();
                 stepTransition.OnConditionComplete -= LoadNextStep;
+                stepTransition.StopWaitingForCondition();
             }
         }
 
         private void LoadNextStep(Step step)
         {
+            Debug.Log(step.name);
             UnsubscribeTransitions(_currentStep);
+            Debug.Log("Unsubscribe");
             _currentStep = step;
+            Debug.Log("Set Current Step");
             _onStepEnded.Invoke();
+            Debug.Log("OnStepEndedInvoke");
             _onStepLoaded.Invoke(_currentStep);
+            Debug.Log("OnStepLoadedInvoke");
             _onStepChanged.Invoke();
+            Debug.Log("OnStepEndedChanged");
             SubscribeTransitions(_currentStep);
+            Debug.Log("Subscribe");
         }
     }
 }

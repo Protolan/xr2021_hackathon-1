@@ -21,16 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: ecb9c1da21d96a84fbcfc5b73696062c, type: 2}
-    _condition: {fileID: 11400000, guid: c665e394ae87bf6419ab97cb75d0b6c1, type: 2}
-  - _nextStep: {fileID: 11400000, guid: 6358a3374366d70439d097816bd05f18, type: 2}
-    _condition: {fileID: 11400000, guid: dc0cf7fb58e472045b341daabdb49bc4, type: 2}
-  - _nextStep: {fileID: 11400000, guid: 51c3250c6cff69e49acd1ba3f4b14b6b, type: 2}
-    _condition: {fileID: 11400000, guid: e6c6333973661984e9f01781996d0287, type: 2}
-  - _nextStep: {fileID: 11400000, guid: f0b64c051a09aaf4abac9663136defe3, type: 2}
-    _condition: {fileID: 11400000, guid: d960a11165669d448a89dbeccc194704, type: 2}
-  _features: 02000000030000000400000008000000
+  _transitions: []
+  _features: 
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -38,13 +30,13 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: Press the Start button.
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: 1efa77abe174a0548b374d431f239415, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: Btn_Start
-    _footnoteText: Press to start washing
+    _buttonID: 
+    _footnoteText: 

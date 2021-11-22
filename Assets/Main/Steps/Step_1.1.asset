@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Step_1.1
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
+    SerializedFormat: 0
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -41,7 +41,7 @@ MonoBehaviour:
   _voiceActingData:
     _clip: {fileID: 8300000, guid: ccc34cc29c6b9e9488869f91f6031b4b, type: 3}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
     _buttonID: 

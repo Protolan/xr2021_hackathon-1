@@ -21,16 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions:
-  - _nextStep: {fileID: 11400000, guid: a14ce8794cacb0a479567cb4e4f62f4b, type: 2}
-    _condition: {fileID: 11400000, guid: c791b50fe68560d46a73d76cd256e51a, type: 2}
-  - _nextStep: {fileID: 11400000, guid: a1ae44ffa16a88144a720fc77cb5f4a3, type: 2}
-    _condition: {fileID: 11400000, guid: dc0cf7fb58e472045b341daabdb49bc4, type: 2}
-  - _nextStep: {fileID: 11400000, guid: a1ae44ffa16a88144a720fc77cb5f4a3, type: 2}
-    _condition: {fileID: 11400000, guid: c665e394ae87bf6419ab97cb75d0b6c1, type: 2}
-  - _nextStep: {fileID: 11400000, guid: a1ae44ffa16a88144a720fc77cb5f4a3, type: 2}
-    _condition: {fileID: 11400000, guid: 6c1895648064f43468377219b0de411e, type: 2}
-  _features: 02000000030000000400000008000000
+  _transitions: []
+  _features: 
   _modularMenuData:
     _mainText: 
     _sprite: {fileID: 0}
@@ -38,13 +30,13 @@ MonoBehaviour:
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: Put the detergent into the compartment 2.
+    _text: 
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: c80514928ca48b941a4ad8895dfb89ee, type: 3}
+    _clip: {fileID: 0}
   _voiceListenerData:
-    _listenDuration: 0
+    _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: SoapDrawer_Slot_2
-    _footnoteText: Put detergent here
+    _buttonID: 
+    _footnoteText: 

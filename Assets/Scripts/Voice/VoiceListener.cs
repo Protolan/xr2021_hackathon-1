@@ -14,6 +14,7 @@ namespace Voice
         [SerializeField] private AppVoiceExperience _voice;
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onVoiceActorFinished;
+        [SerializeField] private GameEvent _onNotUnderstand;
 
         private VoiceListenerData _data;
         private bool _isActive;
@@ -35,8 +36,11 @@ namespace Voice
         {
             if (!_isActive) return;
             WitResponseNode handleIntent = response.GetFirstIntent();
-            if (!CheckForIntent(handleIntent)) 
-                _voice.Activate();
+            if (!CheckForIntent(handleIntent))
+            {
+                _onNotUnderstand.Invoke();
+                _onVoiceActorFinished.AddAction(WaitForVoiceActorFinished);
+            } 
         }
 
         private bool CheckForIntent(WitResponseNode handleIntent)

@@ -1,7 +1,9 @@
-﻿using Architecture;
+﻿using System.Collections;
+using Architecture;
 using ScriptableSystem.GameEvent;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
 namespace DeviceLogic
 {
     public class DeviceBoundaryDrawer : MonoBehaviour
@@ -13,13 +15,20 @@ namespace DeviceLogic
         [SerializeField] private DeviceData _data;
         [SerializeField] private GameObject _boundaryObject;
         [SerializeField] private Transform _drawingPoint;
-        [SerializeField] private OVRInputModule test;
+        [SerializeField] private OVRInputModule _input;
 
         private DevicePlacingBehaviour _currentBehaviour;
         private bool _isActive;
         private Vector3 _startMachineScale;
-        private InputModule _inputModule;
-        
+        private UserInput _userInput;
+        private bool _buttonSelected;
+
+
+        public void ButtonSelected(bool state)
+        {
+            Debug.Log(state);
+            _buttonSelected = state;
+        }
 
 
         private void Start()
@@ -28,15 +37,15 @@ namespace DeviceLogic
             _boundaryObject.SetActive(false);
             _data._washingMachine.gameObject.SetActive(false);
             _startMachineScale = _data._washingMachine.transform.localScale;
-            _inputModule = new InputModule();
+            _userInput = new UserInput();
         }
 
 
         private void Update()
         {
-            if(!_isActive) return;
+            if (!_isActive) return;
             _currentBehaviour?.Invoke();
-            _inputModule.Check();
+            _userInput.Check();
         }
 
         private void OnEnable() => _onStepLoaded.AddAction(ActivateIfHave);
@@ -44,45 +53,65 @@ namespace DeviceLogic
 
         private void ActivateIfHave(Step stepData)
         {
+     
+            _buttonSelected = false;
+       
             if (!stepData.ContainsFeature(StepFeature.DeviceDrawer)) return;
-            _isActive = true;
-            _boundaryObject.SetActive(false);
-            _data._washingMachine.gameObject.SetActive(false);
-            _inputModule.ONButtonDown += StartDrawing;
-        }
 
+            _userInput = new UserInput();
+            _isActive = true;
+        
+            _boundaryObject.SetActive(false);
+        
+            _data._washingMachine.gameObject.SetActive(false);
+            _userInput.ONButtonDown += StartDrawing;
+        }
+        
         private void StartDrawing()
         {
             _currentBehaviour = new DrawingBoundariesBehaviour(_boundaryObject, _drawingPoint, _data._scales);
-            _inputModule.ONButtonDown -= StartDrawing;
-            _inputModule.ONButtonUp += CheckSettingHeight;
+            _userInput.ONButtonDown -= StartDrawing;
+            _userInput.ONButtonUp += CheckSettingHeight;
         }
 
         private void CheckSettingHeight()
         {
             _currentBehaviour = null;
             _onConfirmButtonPressed.AddAction(SetDevice);
-            _inputModule.ONButtonUp -= CheckSettingHeight;
-            _inputModule.ONButtonDown += StartSettingHeight;
+            _userInput.ONButtonUp -= CheckSettingHeight;
+            _userInput.ONButtonDown += StartSettingHeight;
             _onBoundariesDrawn.Invoke();
         }
+
         private void StartSettingHeight()
         {
-            if (test.onInterface)
-            {
-                _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
-                _inputModule.ONButtonDown -= StartSettingHeight;
-                _inputModule.ONButtonUp += CheckSettingHeight;
-            }
+            Debug.Log(_buttonSelected);
+            if (_buttonSelected) return;
+            _currentBehaviour = new SettingBoundariesHeightBehaviour(_boundaryObject, _drawingPoint);
+            _userInput.ONButtonDown -= StartSettingHeight;
+            _userInput.ONButtonUp += CheckSettingHeight;
         }
+
+        private bool CheckForButtonSelected()
+        {
+            if (Physics.Raycast(_input.rayTransform.position, _input.rayTransform.forward, 100f,
+                LayerMask.GetMask("UI")))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
 
         private void SetDevice()
         {
-            _inputModule.ONButtonDown -= CheckSettingHeight;
+            _userInput.ONButtonDown -= StartSettingHeight;
+            _userInput.ONButtonDown -= CheckSettingHeight;
             _onConfirmButtonPressed.RemoveAction(SetDevice);
             _currentBehaviour = new DeviceSettingBehaviour(_data._washingMachine.gameObject, _boundaryObject,
                 _data._scales, _startMachineScale);
-            _inputModule.ONButtonDown -= SetDevice;
+            _userInput.ONButtonDown -= SetDevice;
             _onDrawingComplete.Invoke();
             _isActive = false;
         }

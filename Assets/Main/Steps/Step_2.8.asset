@@ -21,22 +21,26 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 27e5641f0b0366a4391b8edfe9600147, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000500000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: If everything is clear close detergent dispencer and say "ok"
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: If everything is clear close detergent dispencer and say "ok"
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: ac20c4f8b5b691c4886445c3bc1ea177, type: 3}
   _voiceListenerData:
-    _listenDuration: 0
-    _intents: []
+    _notUnderStandClip: {fileID: 8300000, guid: a5669a6344f251f4286aa463a96f4939,
+      type: 3}
+    _intents:
+    - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 
