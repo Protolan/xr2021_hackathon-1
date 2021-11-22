@@ -12,6 +12,7 @@ namespace DeviceLogic.DevicePlacer
         private void Start()
         {
             _defaultMaterial = _renderer[0].material;
+            gameObject.SetActive(false);
         }
 
         public void MakeTransparent() => SetMaterial(_transparentMaterial);

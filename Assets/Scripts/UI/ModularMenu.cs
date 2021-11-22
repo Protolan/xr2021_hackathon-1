@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Architecture;
 using ScriptableSystem.GameEvent;
 using TMPro;
@@ -17,6 +18,9 @@ namespace UI
         [SerializeField] private GameObject _parentObject;
         [SerializeField] private GameObject _twoButtonModule;
         [SerializeField] private Button _redrawButton;
+        [SerializeField] private Animator _imageAnimator;
+        [SerializeField] private GameObject _image;
+        private static readonly int Step2 = Animator.StringToHash("Step2");
 
         private void OnEnable() => _onStepLoaded.AddAction(LoadData);
 
@@ -41,6 +45,7 @@ namespace UI
             _cancelButton.gameObject.SetActive(false);
             _redrawButton.gameObject.SetActive(false);
             _twoButtonModule.gameObject.SetActive(false);
+            _image.gameObject.SetActive(false);
         }
 
         private void UpdateContent(ModularMenuData data)
@@ -67,6 +72,8 @@ namespace UI
 
             if (data._features.Contains(ModularMenuFeature.Image))
             {
+                _image.gameObject.SetActive(true);
+                _imageAnimator.SetBool(Step2, data._animation == AnimationType.SettingHeight);
             }
             else
             {

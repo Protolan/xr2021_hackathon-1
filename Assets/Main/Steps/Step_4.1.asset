@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: Is the door closed tight?
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Is the door closed tight?
@@ -30,6 +29,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: WashDrawer
     _footnoteText: Check the door

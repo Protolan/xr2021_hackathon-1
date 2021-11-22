@@ -21,12 +21,11 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: dc0cf7fb58e472045b341daabdb49bc4, type: 2}
   - _nextStep: {fileID: 11400000, guid: a1ae44ffa16a88144a720fc77cb5f4a3, type: 2}
     _condition: {fileID: 11400000, guid: c665e394ae87bf6419ab97cb75d0b6c1, type: 2}
-  _features: 020000000300000004000000
+  _features: 02000000030000000400000008000000
   _modularMenuData:
     _mainText: Put the detergent into the compartment 2.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Put the detergent into the compartment 2.
@@ -36,6 +35,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: SoapDrawer_Slot_2
     _footnoteText: Put detergent here

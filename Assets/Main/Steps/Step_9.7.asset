@@ -20,13 +20,12 @@ MonoBehaviour:
   - _nextStep: {fileID: 11400000, guid: ecb9c1da21d96a84fbcfc5b73696062c, type: 2}
     _condition: {fileID: 11400000, guid: c665e394ae87bf6419ab97cb75d0b6c1, type: 2}
   - _nextStep: {fileID: 11400000, guid: 6358a3374366d70439d097816bd05f18, type: 2}
-    _condition: {fileID: 11400000, guid: 483d4a2483c3d8043a1af2ddc5e19f18, type: 2}
-  _features: 020000000300000004000000
+    _condition: {fileID: 11400000, guid: dc0cf7fb58e472045b341daabdb49bc4, type: 2}
+  _features: 02000000030000000400000008000000
   _modularMenuData:
     _mainText: Press the Start button.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Press the Start button.
@@ -36,6 +35,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Start
     _footnoteText: Press to start washing

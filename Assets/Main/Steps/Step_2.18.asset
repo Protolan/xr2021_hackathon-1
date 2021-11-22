@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Nice job! You've completed basic tour on your washing machine. If
       you want to get some tips on washing press next \ say OK
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Nice job! You've completed basic tour on your washing machine. If you
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

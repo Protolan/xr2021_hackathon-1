@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 0200000004000000
   _modularMenuData:
     _mainText: It has different compartments. I'll lead you trough them.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: It has different compartments. I'll lead you trough them.
@@ -30,6 +29,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

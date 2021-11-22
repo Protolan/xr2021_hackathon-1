@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: "That is EcoTime option. It optimise washing cycle and helps wash
       cotton and\_synthetic fabrics faster with less water and electricity used."
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: "That is EcoTime option. It optimise washing cycle and helps wash cotton
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Special_1
     _footnoteText: EcoTime

@@ -21,16 +21,15 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 656234895f8c67147a12957831316fbb, type: 2}
   - _nextStep: {fileID: 11400000, guid: ee5ec4c260d9ab04195ca3a18c39d12b, type: 2}
     _condition: {fileID: 11400000, guid: d960a11165669d448a89dbeccc194704, type: 2}
-  _features: 020000000500000004000000
+  _features: 02000000050000000400000001000000
   _modularMenuData:
-    _mainText: What do you want to wash?
-    _sprite: {fileID: 0}
+    _mainText: 'You can ask me tips about: <b><u> Wool Cotton Jeans Sneakers </b></u>'
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: What do you want to wash?
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: a35aa0c0aab482745b6b582efc8e8481, type: 3}
   _voiceListenerData:
@@ -41,6 +40,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 656234895f8c67147a12957831316fbb, type: 2}
     - {fileID: 11400000, guid: 483d4a2483c3d8043a1af2ddc5e19f18, type: 2}
     - {fileID: 11400000, guid: d960a11165669d448a89dbeccc194704, type: 2}
+    _notUnderStandText: I'm sorry, I did not understand you. Can you repeat the question?
+      You can ask me about laundry tips for jeans, cotton, wool or sneakers
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

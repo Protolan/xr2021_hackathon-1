@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: The selected programe does not provide water drain, so you should
       start the drain manually.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: The selected programe does not provide water drain, so you should start
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

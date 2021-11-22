@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - _nextStep: {fileID: 11400000, guid: 5725b7b1402a94a4ca95d31e72fd8905, type: 2}
-    _condition: {fileID: 11400000, guid: 281493a2ae4a1c7479b0b2e916495a67, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _features: 01000000040000000200000006000000
   _modularMenuData:
     _mainText: 
-    _sprite: {fileID: 0}
     _imageText: Hold your controller, on the front edge of your washing machine,
       then press and hold the trigger button, draw a line from one side of the item
       to another, then release the trigger button when you finished.
-    _titleText: 
-    _features: 00000000
+    _animation: 0
+    _features: 0000000003000000
   _dialogDialogMenuData:
     _text: Hold your controller, on the front edge of your washing machine, then
       press and hold the trigger button, draw a line from one side of the item to
       another, then release the trigger button when you finished.
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: ccc34cc29c6b9e9488869f91f6031b4b, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

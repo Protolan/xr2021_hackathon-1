@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: First is for prewash detergent. Before adding any, be sure there is
       no copmartment for bleach chemistry inside.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: First is for prewash detergent. Before adding any, be sure there is no
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: SoapDrawer_Slot_1
     _footnoteText: Slot for prewash detergent

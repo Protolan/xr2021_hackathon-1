@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Second is for main wash detergent, liquid or powder, you need to put
       it there before the washing cycle starts.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Second is for main wash detergent, liquid or powder, you need to put it
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: SoapDrawer_Slot_2
     _footnoteText: Slot for main wash detergent

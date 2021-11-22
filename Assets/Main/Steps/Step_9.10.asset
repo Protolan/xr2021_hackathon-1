@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Nice! The washing cycle will end in 50 minutes, don't forget about
       it!
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Nice! The washing cycle will end in 50 minutes, don't forget about it!
@@ -31,6 +30,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

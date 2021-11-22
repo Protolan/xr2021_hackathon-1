@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Looks like you need help from the professional. Should I call the
       hotline?
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Looks like you need help from the professional. Should I call the hotline?
@@ -31,6 +30,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

@@ -21,9 +21,8 @@ MonoBehaviour:
       the next wash programme to start. You use it if the programme needs to be finished
       at a certain time, for instance when you come home from work. Delay time is
       up to 12 hours.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: That is Delay Start option. It allows you to determine when you want the
@@ -36,6 +35,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Special_4
     _footnoteText: Delay option

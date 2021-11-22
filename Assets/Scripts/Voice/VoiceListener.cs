@@ -15,9 +15,11 @@ namespace Voice
         [SerializeField] private StepGameEvent _onStepLoaded;
         [SerializeField] private GameEvent _onVoiceActorFinished;
         [SerializeField] private GameEvent _onNotUnderstand;
+        [SerializeField] private GameObject _microphoneUI;
 
         private VoiceListenerData _data;
         private bool _isActive;
+        private Coroutine _coroutine;
 
         protected override void OnEnable()
         {
@@ -39,7 +41,7 @@ namespace Voice
             if (!CheckForIntent(handleIntent))
             {
                 _onNotUnderstand.Invoke();
-                _onVoiceActorFinished.AddAction(WaitForVoiceActorFinished);
+                _coroutine = StartCoroutine(StartListening());
             } 
         }
 
@@ -71,15 +73,23 @@ namespace Voice
                 _onVoiceActorFinished.AddAction(WaitForVoiceActorFinished);
             }
             else
+            {
+                if(_coroutine != null) StopCoroutine(_coroutine);
                 DeactivateListener();
+                _onVoiceActorFinished.RemoveAction(WaitForVoiceActorFinished);
+            }
         }
 
-        private void DeactivateListener() => _isActive = false;
+        private void DeactivateListener()
+        {
+            _isActive = false;
+            _microphoneUI.gameObject.SetActive(true);
+        }
 
         private void WaitForVoiceActorFinished()
         {
             _isActive = true;
-            StartCoroutine(StartListening());
+            _coroutine = StartCoroutine(StartListening());
             _onVoiceActorFinished.RemoveAction(WaitForVoiceActorFinished);
         }
 
@@ -87,6 +97,7 @@ namespace Voice
         {
             yield return new WaitForSeconds(0.5f);
             _voice.Activate();
+            _microphoneUI.gameObject.SetActive(false);
         }
         
     }

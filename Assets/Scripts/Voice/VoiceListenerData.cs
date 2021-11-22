@@ -9,5 +9,6 @@ namespace Voice
     {
         public AudioClip _notUnderStandClip;
         public VoiceIntent[] _intents;
+        public string _notUnderStandText;
     }
 }

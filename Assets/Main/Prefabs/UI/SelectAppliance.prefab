@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 503395132242752125}
   - component: {fileID: 503395132242752126}
   - component: {fileID: 503395132242752127}
-  - component: {fileID: 503395132242752099}
+  - component: {fileID: 1226512316}
   m_Layer: 5
   m_Name: SelectAppliance
   m_TagString: Untagged
@@ -104,7 +104,7 @@ RectTransform:
   m_GameObject: {fileID: 503395132242752120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_Children:
   - {fileID: 4855068720234898700}
   m_Father: {fileID: 0}
@@ -178,7 +178,7 @@ MonoBehaviour:
     m_Bits: 55
   pointer: {fileID: 0}
   sortOrder: 0
---- !u!114 &503395132242752099
+--- !u!114 &1226512316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,19 +187,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 503395132242752120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981e454f6a39479c8aac8d64660755f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 78b4530f4da84551b9610600e7700769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
-  _mainText: {fileID: 503395132819026931}
-  _image: {fileID: 0}
-  _imageText: {fileID: 0}
-  _okButton: {fileID: 0}
-  _cancelButton: {fileID: 0}
-  _parentObject: {fileID: 9077371836098929152}
-  _title: {fileID: 0}
-  _twoButtonModule: {fileID: 0}
-  _redrawButton: {fileID: 0}
 --- !u!1 &503395132819026893
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +259,7 @@ MonoBehaviour:
   m_text: Select your appliance
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 555997eade4d87b4494904229a6de625, type: 2}
-  m_sharedMaterial: {fileID: 2556752788758026181, guid: 555997eade4d87b4494904229a6de625,
+  m_sharedMaterial: {fileID: 1249217082787677283, guid: 555997eade4d87b4494904229a6de625,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -455,19 +446,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6584239728748721681}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-        m_TargetAssemblyTypeName: ScriptableSystem.GameEvent.GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6584239728769606125
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +517,7 @@ MonoBehaviour:
     IWUB-4085 Washing Machine'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -673,7 +652,7 @@ MonoBehaviour:
   m_text: Coming soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -993,19 +972,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6584239729201777781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-        m_TargetAssemblyTypeName: ScriptableSystem.GameEvent.GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6584239729741973162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,19 +1093,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6584239729741973161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-        m_TargetAssemblyTypeName: ScriptableSystem.GameEvent.GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6584239730140280446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1162,7 @@ MonoBehaviour:
   m_text: Coming soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1342,7 +1297,7 @@ MonoBehaviour:
   m_text: Coming soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1552,7 +1507,7 @@ MonoBehaviour:
   m_text: Coming soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1739,19 +1694,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6584239730520021766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-        m_TargetAssemblyTypeName: ScriptableSystem.GameEvent.GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &9077371836098929152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1807,7 @@ MonoBehaviour:
   m_text: Coming soon...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90c3f75700972d04a88fc22c5414eb7a, type: 2}
-  m_sharedMaterial: {fileID: -7556955154687012057, guid: 90c3f75700972d04a88fc22c5414eb7a,
+  m_sharedMaterial: {fileID: -5113655317839028382, guid: 90c3f75700972d04a88fc22c5414eb7a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2051,16 +1994,4 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9154750616241914686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-        m_TargetAssemblyTypeName: ScriptableSystem.GameEvent.GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []

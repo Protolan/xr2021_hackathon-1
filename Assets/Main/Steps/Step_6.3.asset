@@ -17,21 +17,21 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   - _nextStep: {fileID: 11400000, guid: f23a7f241b9f584459b522c68b68b3d1, type: 2}
     _condition: {fileID: 11400000, guid: d90dbec23323b694491b23d8636e1e5c, type: 2}
-  _features: 0100000004000000
+  _features: 010000000400000002000000
   _modularMenuData:
     _mainText: Is your problem solved?
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 01000000
   _dialogDialogMenuData:
     _text: Is your problem solved?
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: 80dc5a9fe41f6d94d94c43e6705daf4b, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

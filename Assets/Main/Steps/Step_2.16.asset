@@ -22,9 +22,8 @@ MonoBehaviour:
       CLOSED indicator to turn off and after that you could open the machine. After
       you ready to continue the cycle - check if the door is closed and push the
       button again.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: That is a Start/Pause button. Use it when you ready to start the wash
@@ -38,6 +37,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Start
     _footnoteText: Start washing program

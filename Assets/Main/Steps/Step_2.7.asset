@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: Third is for any kind of fabric softners.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Third is for any kind of fabric softners.
@@ -30,6 +29,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: SoapDrawer_Slot_3
     _footnoteText: Slot for fabric softeners

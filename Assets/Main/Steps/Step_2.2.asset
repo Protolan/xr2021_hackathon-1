@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: That button turns on the washing machine. Press it to start preparing
       washing cycle.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: That button turns on the washing machine. Press it to start preparing
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Power
     _footnoteText: Power Button

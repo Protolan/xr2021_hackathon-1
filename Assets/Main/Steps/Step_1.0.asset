@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: Step_1.0
   m_EditorClassIdentifier: 
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
+  - _nextStep: {fileID: 11400000, guid: d59573b6ac4f00d4f9f03ad517b45346, type: 2}
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 02000000040000000700000001000000
+  _features: 020000000400000009000000
   _modularMenuData:
     _mainText: Hello! My name is Helpy and I am your assistant. I can help you with
       your home appliances. Choose your item and we'll be ready to start
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Hello! My name is Helpy and I am your assistant. I can help you with your
       home appliances. Choose your item and we'll be ready to start
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: 0764a9a8977307245b949f81e01c412f, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

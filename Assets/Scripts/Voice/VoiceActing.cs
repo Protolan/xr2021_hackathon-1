@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Architecture;
 using ScriptableSystem.GameEvent;
+using UI;
 using UnityEngine;
 
 namespace Voice
@@ -13,6 +14,7 @@ namespace Voice
         [SerializeField] private AudioSource _source;
         [SerializeField] private GameEvent _onNotUnderstand;
         [SerializeField] private Animator _animator;
+        [SerializeField] private FloatGameEvent _onNotUnderstandDuration;
 
         private Coroutine _currentPlaying;
         private AudioClip _notUnderstandClip;
@@ -29,6 +31,7 @@ namespace Voice
         {
             StopClip();
             StartActing(_notUnderstandClip);
+            _onNotUnderstandDuration.Invoke(_notUnderstandClip.length);
         }
 
         private void OnDisable()
@@ -40,9 +43,13 @@ namespace Voice
         }
 
         private void StopClip()
-        { 
-            if(_currentPlaying != null) StopCoroutine(_currentPlaying); 
-            if(_source.isPlaying) _source.Stop();
+        {
+            if (_currentPlaying != null) StopCoroutine(_currentPlaying);
+            if (_source.isPlaying)
+            {
+                _source.Stop();
+                _animator.SetBool(Speak, false);
+            }
         }
 
         private void StartActingIfHave(Step step)

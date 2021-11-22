@@ -20,9 +20,8 @@ MonoBehaviour:
     _mainText: "Here is Bleaching option. It helps with washing\_heavily soiled fabric.
       Use bleaching chemistry in a special compartment which goes inside the 1st
       section of detergent dispenser."
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: "Here is Bleaching option. It helps with washing\_heavily soiled fabric.
@@ -34,6 +33,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_Special_2
     _footnoteText: Bleaching

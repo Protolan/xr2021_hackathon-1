@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
-  m_Name: Step_2.11
+  m_Name: Step_1.0.1
   m_EditorClassIdentifier: 
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: bd9778cabc6ec7b44bddce9a23fe68aa, type: 2}
+  - _nextStep: {fileID: 11400000, guid: 15635b4d4b4ed3a40a4707fd61f913ae, type: 2}
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0200000004000000
+  _features: 0200000007000000
   _modularMenuData:
-    _mainText: Now let's talk about buttons for additional options. You can find
-      them here.
-    _sprite: {fileID: 0}
+    _mainText: Place demo washing machine to evaluate our project. It is necessary
+      cause we implemented visual instruction for one exact model of the washing
+      machine.
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
-    _text: Now let's talk about buttons for additional options. You can find them
-      here.
+    _text: Place demo washing machine to evaluate our project. It is necessary cause
+      we implemented visual instruction for one exact model of the washing machine.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 8300000, guid: 7e268618110c1c648a08b69b31102afc, type: 3}
+    _clip: {fileID: 8300000, guid: 0764a9a8977307245b949f81e01c412f, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
-    _buttonID: SpecialButtons
-    _footnoteText: Special buttons
+    _buttonID: 
+    _footnoteText: 

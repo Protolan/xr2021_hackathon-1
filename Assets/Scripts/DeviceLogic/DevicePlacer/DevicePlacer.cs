@@ -1,5 +1,4 @@
-﻿using System;
-using Architecture;
+﻿using Architecture;
 using ScriptableSystem.GameEvent;
 using UnityEngine;
 using UnityEngine.EventSystems;

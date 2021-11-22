@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Add the detergent for heavily soiled fabric into compartment 1. Say
       "okay" when you done.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Add the detergent for heavily soiled fabric into compartment 1. Say "okay"
@@ -34,6 +33,8 @@ MonoBehaviour:
       type: 3}
     _intents:
     - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+    _notUnderStandText: I'm sorry, I did not understand you. Can you repeat it for
+      me?
   _deviceButtonActionData:
     _buttonID: SoapDrawer_Slot_1
     _footnoteText: Add detergent here

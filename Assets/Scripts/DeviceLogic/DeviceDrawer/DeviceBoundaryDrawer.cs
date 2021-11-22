@@ -49,7 +49,7 @@ namespace DeviceLogic
         }
 
         private void OnEnable() => _onStepLoaded.AddAction(ActivateIfHave);
-        private void OnDisable() => _onStepLoaded.RemoveAction(ActivateIfHave);
+        private void OnDestroy() => _onStepLoaded.RemoveAction(ActivateIfHave);
 
         private void ActivateIfHave(Step stepData)
         {
@@ -71,7 +71,14 @@ namespace DeviceLogic
         {
             _currentBehaviour = new DrawingBoundariesBehaviour(_boundaryObject, _drawingPoint, _data._scales);
             _userInput.ONButtonDown -= StartDrawing;
-            _userInput.ONButtonUp += CheckSettingHeight;
+            _userInput.ONButtonUp += StopDrawing;
+        }
+
+        private void StopDrawing()
+        {
+            _currentBehaviour = null;
+            _userInput.ONButtonDown += StartDrawing;
+            _userInput.ONButtonUp -= StopDrawing;
         }
 
         private void CheckSettingHeight()

@@ -12,11 +12,11 @@ namespace DeviceLogic.DeviceDrawer
 
         private void OnEnable() => _onStepLoaded.AddAction(Deactivate);
 
-        private void OnDisable() => _onStepLoaded.RemoveAction(Deactivate);
+        private void OnDestroy() => _onStepLoaded.RemoveAction(Deactivate);
 
         private void Deactivate(Step step)
         {
-            if(step == _stepToDeactivate) gameObject.SetActive(false);
+            if (step == _stepToDeactivate) gameObject.SetActive(false);
         }
     }
 }

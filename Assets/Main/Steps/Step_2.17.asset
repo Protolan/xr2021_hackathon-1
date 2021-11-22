@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: These indicators will help you understand the status of the washing
       cycle.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: These indicators will help you understand the status of the washing cycle.
@@ -31,6 +30,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Indicators
     _footnoteText: These indicators will help you understand the status of the washing

@@ -11,5 +11,8 @@
         DeviceDrawer,
         DevicePlacing,
         PlayerChoose,
+        ChoosingMenu,
+        DeactivateScanPanel,
+        EnableMainMenu,
     }
 }

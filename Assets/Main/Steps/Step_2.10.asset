@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Step_2.10
   m_EditorClassIdentifier: 
   _transitions:
-  - _nextStep: {fileID: 11400000, guid: e6a9af7de73d0c34cbeef5d9ccb797d5, type: 2}
+  - _nextStep: {fileID: 11400000, guid: bd9778cabc6ec7b44bddce9a23fe68aa, type: 2}
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: Here is temperature control dial. More about temperature and programms
       you'll learn in a practical tips for washing.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Here is temperature control dial. More about temperature and programms
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_temperature
     _footnoteText: You can set temperature here

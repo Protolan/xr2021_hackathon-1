@@ -19,16 +19,16 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 7c24714a5218fae409ea32a2d3e8f930, type: 2}
   - _nextStep: {fileID: 11400000, guid: e12101f540f17044f877765922946402, type: 2}
     _condition: {fileID: 11400000, guid: 64df2eab78fe4854fb30955ef3fc892c, type: 2}
-  _features: 020000000500000004000000
+  _features: 02000000050000000400000001000000
   _modularMenuData:
-    _mainText: What went wrong?
-    _sprite: {fileID: 0}
+    _mainText: 'you can ask me about problems: <b><u> washing not starting washer
+      not working drain problem </b></u>'
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: What went wrong?
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: 621529dc65026f44eab89785a4bd471b, type: 3}
   _voiceListenerData:
@@ -38,6 +38,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7c24714a5218fae409ea32a2d3e8f930, type: 2}
     - {fileID: 11400000, guid: 212ca58236720324188d1ee7cc6d3407, type: 2}
     - {fileID: 11400000, guid: 64df2eab78fe4854fb30955ef3fc892c, type: 2}
+    _notUnderStandText: I'm sorry, I did not understand you. Can you repeat the question?
+      You can ask me about the washing cycle,  washing machine starting problems
+      or draining problems
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

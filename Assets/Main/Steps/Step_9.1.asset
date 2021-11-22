@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: You could use the 2nd programe for cotton. Turn the dial to 2.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: You could use the 2nd programe for cotton. Turn the dial to 2.
@@ -30,6 +29,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Btn_program
     _footnoteText: Turn to program 2

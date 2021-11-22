@@ -19,18 +19,17 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 46953adfa1c4fe447b834ba025c378fa, type: 2}
   - _nextStep: {fileID: 11400000, guid: 2d4ef7dd249aba84aa6b78384ce25ec5, type: 2}
     _condition: {fileID: 11400000, guid: 6c1bff03f1bf4504481e33cebbcd368a, type: 2}
-  _features: 010000000500000004000000
+  _features: 01000000050000000400000002000000
   _modularMenuData:
-    _mainText: I can share with you the basic information about washing machine,
-      practical tips on washing or troubleshooting. How can I help you?
-    _sprite: {fileID: 0}
+    _mainText: You can ask me about:<br> <b><u>starting guide<br> laundry tips<br>
+      troubleshooting</b></u><br>
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: I can share with you the basic information about washing machine, practical
       tips on washing or troubleshooting. How can I help you?
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: 262793bc5cab6024d8f17bbae00be096, type: 3}
   _voiceListenerData:
@@ -40,6 +39,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6c1bff03f1bf4504481e33cebbcd368a, type: 2}
     - {fileID: 11400000, guid: 46953adfa1c4fe447b834ba025c378fa, type: 2}
     - {fileID: 11400000, guid: 9113f4a07a27e17488bde5d09682a10a, type: 2}
+    _notUnderStandText: I'm sorry, I did not understand you. Can you repeat the question?
+      You can ask me for a guide, about laundry tips or I can help you with a problem
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

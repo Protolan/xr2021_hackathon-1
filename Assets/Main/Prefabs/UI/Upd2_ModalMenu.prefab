@@ -821,7 +821,7 @@ RectTransform:
   m_GameObject: {fileID: 8547270298380326064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 3675712995842819012}
   m_Father: {fileID: 0}
@@ -909,13 +909,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
   _mainText: {fileID: 8547270299779798331}
-  _image: {fileID: 0}
   _imageText: {fileID: 8547270298955193160}
   _okButton: {fileID: 8547270300147921857}
   _cancelButton: {fileID: 8547270298513369795}
   _parentObject: {fileID: 980420975919514824}
   _twoButtonModule: {fileID: 9160966778687006150}
   _redrawButton: {fileID: 7096401568988626762}
+  _imageAnimator: {fileID: 0}
+  _image: {fileID: 0}
 --- !u!1 &8547270298513369804
 GameObject:
   m_ObjectHideFlags: 0

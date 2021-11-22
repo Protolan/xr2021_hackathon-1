@@ -19,19 +19,19 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Place the controller ring on top of your item, then press the trigger
       button to continue. You can skip if it looks accurate
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
-    _features: 
+    _animation: 1
+    _features: 0000000003000000
   _dialogDialogMenuData:
     _text: Place the controller ring on top of your item, then press the trigger
       button to continue. You can skip if it looks accurate
-    _hasButton: 1
+    _hasButton: 0
   _voiceActingData:
     _clip: {fileID: 8300000, guid: 219292b9c02435149a29e452ec1d6103, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

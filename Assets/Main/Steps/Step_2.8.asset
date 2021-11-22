@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 020000000500000004000000
   _modularMenuData:
     _mainText: If everything is clear close detergent dispencer and say "ok"
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: If everything is clear close detergent dispencer and say "ok"
@@ -32,6 +31,8 @@ MonoBehaviour:
       type: 3}
     _intents:
     - {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+    _notUnderStandText: I'm sorry, I did not understand you. Can you repeat it for
+      me?
   _deviceButtonActionData:
     _buttonID: 
     _footnoteText: 

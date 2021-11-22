@@ -19,9 +19,8 @@ MonoBehaviour:
   _modularMenuData:
     _mainText: Drain hose might be blocked or twisted. Straighten or cleaning it
       might help.
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Drain hose might be blocked or twisted. Straighten or cleaning it might
@@ -32,6 +31,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: Drain
     _footnoteText: Check your drain hose

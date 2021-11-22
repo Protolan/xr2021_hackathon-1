@@ -5,7 +5,6 @@
         Image,
         Cancel,
         Redraw,
-        Title,
         OkButton,
     }
 }

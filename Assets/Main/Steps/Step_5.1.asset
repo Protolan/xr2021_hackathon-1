@@ -18,9 +18,8 @@ MonoBehaviour:
   _features: 020000000300000004000000
   _modularMenuData:
     _mainText: Is power plug connected correctly?
-    _sprite: {fileID: 0}
     _imageText: 
-    _titleText: 
+    _animation: 0
     _features: 
   _dialogDialogMenuData:
     _text: Is power plug connected correctly?
@@ -30,6 +29,7 @@ MonoBehaviour:
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
+    _notUnderStandText: 
   _deviceButtonActionData:
     _buttonID: PowerPlug
     _footnoteText: Check your power plug
