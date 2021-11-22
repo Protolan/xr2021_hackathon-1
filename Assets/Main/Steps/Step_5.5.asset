@@ -12,19 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_5.5
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 0200000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Looks like you need help from the professional. Should I call the
+      hotline?
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: Looks like you need help from the professional. Should I call the hotline?
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: b9954d5094223274d90e07ad0959eb06, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []

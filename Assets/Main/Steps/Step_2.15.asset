@@ -12,22 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_2.15
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: a03702da33385dd4b91c8b48fe7f9a79, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: That is Delay Start option. It allows you to determine when you want
+      the next wash programme to start. You use it if the programme needs to be finished
+      at a certain time, for instance when you come home from work. Delay time is
+      up to 12 hours.
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: That is Delay Start option. It allows you to determine when you want the
+      next wash programme to start. You use it if the programme needs to be finished
+      at a certain time, for instance when you come home from work. Delay time is
+      up to 12 hours.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: 3759e384893ed9e48970f6e647c97156, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: Btn_Special_4
+    _footnoteText: Delay option

@@ -12,22 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_5.1
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 1495af15d1e8d934fbe54543473dff10, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: Is power plug connected correctly?
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: Is power plug connected correctly?
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: a4f300747a0e4de4fbb55b1853b42e17, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: PowerPlug
+    _footnoteText: Check your power plug

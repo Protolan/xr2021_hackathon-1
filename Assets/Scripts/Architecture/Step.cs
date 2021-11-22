@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -27,6 +28,10 @@ namespace Architecture
         [ShowIf("@ContainsFeature(StepFeature.DeviceAction)")]
         [SerializeField] private DeviceButtonActionData _deviceButtonActionData;
 
+#if UNITY_EDITOR
+        
+        private void OnValidate() => this.MakeDirty();
+#endif
 
         private void DeleteDuplicates() => _features = Features.Distinct().ToList();
 

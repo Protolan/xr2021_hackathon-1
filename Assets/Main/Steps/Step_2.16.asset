@@ -12,22 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_2.16
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: 79859989f8c0e11478782cd772ec5bfc, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: That is a Start/Pause button. Use it when you ready to start the wash
+      cycle. Also it used to pause it. The indicator will start to flash. Wait for
+      CLOSED indicator to turn off and after that you could open the machine. After
+      you ready to continue the cycle - check if the door is closed and push the
+      button again.
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: That is a Start/Pause button. Use it when you ready to start the wash
+      cycle. Also it used to pause it. The indicator will start to flash. Wait for
+      CLOSED indicator to turn off and after that you could open the machine. After
+      you ready to continue the cycle - check if the door is closed and push the
+      button again.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: ec21311b58948434ba534f1d0a1e654b, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: Btn_Start
+    _footnoteText: Start washing program

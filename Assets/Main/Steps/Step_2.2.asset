@@ -12,22 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_2.2
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: fe9b874adeda10d41b97b9b271ed0f0e, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: That button turns on the washing machine. Press it to start preparing
+      washing cycle.
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: That button turns on the washing machine. Press it to start preparing
+      washing cycle.
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: e2c633e00d3695d46899fe88140e9bf8, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: Btn_Power
+    _footnoteText: Power Button

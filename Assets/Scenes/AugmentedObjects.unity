@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
-  _stepToDeactivate: {fileID: 11400000, guid: b5df0ce119573be4e9c3789ccfb7fea1, type: 2}
+  _stepToDeactivate: {fileID: 0}
 --- !u!114 &1267761711 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1267761708, guid: 6432f86ca06a2aa449ce70ee1da15425,
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   _onStepLoaded: {fileID: 11400000, guid: 3a1f26a7acc634e4dbeda85ce27ea148, type: 2}
   _onStepChanged: {fileID: 11400000, guid: aecc96e9b3d07e84fab528c8985f7c23, type: 2}
   _onStepEnded: {fileID: 11400000, guid: b2a3b4a40cbe7d74097e96434d1c204c, type: 2}
-  _mainMenu: {fileID: 0}
+  _mainMenu: {fileID: 11400000, guid: 3bef635dba430354c84df738706f37ce, type: 2}
   _activateBackMenu: {fileID: 11400000, guid: 83fdeccc187e4ed4b8c69e6a7088cd18, type: 2}
 --- !u!4 &1397130278
 Transform:
@@ -1736,7 +1736,7 @@ PrefabInstance:
     - target: {fileID: 194112209691202530, guid: 88a667de1313ebc469123baaeba69e48,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.18
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 194112209691202530, guid: 88a667de1313ebc469123baaeba69e48,
         type: 3}
@@ -1783,11 +1783,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4457379403882629136, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457379403882629137, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457379403882629137, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8547270298567769099, guid: 88a667de1313ebc469123baaeba69e48,
         type: 3}
       propertyPath: _okButton
       value: 
       objectReference: {fileID: 1315842245}
+    - target: {fileID: 8547270298567769108, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547270299580934945, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547270299580934946, guid: 88a667de1313ebc469123baaeba69e48,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a667de1313ebc469123baaeba69e48, type: 3}
 --- !u!4 &1531528665 stripped
@@ -2628,6 +2658,7 @@ MonoBehaviour:
   _onClipFinished: {fileID: 11400000, guid: df72db0ee80cdc2488b6f19249c93c0d, type: 2}
   _source: {fileID: 2004645735}
   _onNotUnderstand: {fileID: 11400000, guid: 483dd40b9ee22074586b4bc7aa5301da, type: 2}
+  _animator: {fileID: 0}
 --- !u!4 &2004645737
 Transform:
   m_ObjectHideFlags: 0

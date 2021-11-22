@@ -1,4 +1,10 @@
 ﻿using System.Globalization;
+using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using Architecture;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+#endif
 
 namespace Voice
 {
@@ -21,5 +27,14 @@ namespace Voice
 
             return res;
         }
+
+#if UNITY_EDITOR
+        public static void MakeDirty(this Step @object)
+        {
+            if (@object != null)
+                EditorUtility.SetDirty(@object);
+            EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+        }
+#endif
     }
 }

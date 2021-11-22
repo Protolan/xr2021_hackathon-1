@@ -17,13 +17,13 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 281493a2ae4a1c7479b0b2e916495a67, type: 2}
   _features: 01000000040000000200000006000000
   _modularMenuData:
-    _mainText: Hold your controller, on the front edge of your washing machine, then
-      press and hold the trigger button, draw a line from one side of the item to
-      another, then release the trigger button when you finished.
+    _mainText: 
     _sprite: {fileID: 0}
-    _imageText: 
+    _imageText: Hold your controller, on the front edge of your washing machine,
+      then press and hold the trigger button, draw a line from one side of the item
+      to another, then release the trigger button when you finished.
     _titleText: 
-    _features: 
+    _features: 00000000
   _dialogDialogMenuData:
     _text: Hold your controller, on the front edge of your washing machine, then
       press and hold the trigger button, draw a line from one side of the item to

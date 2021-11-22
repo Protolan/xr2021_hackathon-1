@@ -12,22 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfbc56ab04e764a979779c6d857e03, type: 3}
   m_Name: Step_2.13
   m_EditorClassIdentifier: 
-  _transitions: []
-  _features: 
+  _transitions:
+  - _nextStep: {fileID: 11400000, guid: cb96e312e8bf30f4e934b449405034b1, type: 2}
+    _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
+  _features: 020000000300000004000000
   _modularMenuData:
-    _mainText: 
+    _mainText: "Here is Bleaching option. It helps with washing\_heavily soiled fabric.
+      Use bleaching chemistry in a special compartment which goes inside the 1st
+      section of detergent dispenser."
     _sprite: {fileID: 0}
     _imageText: 
     _titleText: 
     _features: 
   _dialogDialogMenuData:
-    _text: 
+    _text: "Here is Bleaching option. It helps with washing\_heavily soiled fabric.
+      Use bleaching chemistry in a special compartment which goes inside the 1st
+      section of detergent dispenser."
     _hasButton: 1
   _voiceActingData:
-    _clip: {fileID: 0}
+    _clip: {fileID: 8300000, guid: fe5cf1d2d946aa74a83427e81c40d2c7, type: 3}
   _voiceListenerData:
     _notUnderStandClip: {fileID: 0}
     _intents: []
   _deviceButtonActionData:
-    _buttonID: 
-    _footnoteText: 
+    _buttonID: Btn_Special_2
+    _footnoteText: Bleaching
