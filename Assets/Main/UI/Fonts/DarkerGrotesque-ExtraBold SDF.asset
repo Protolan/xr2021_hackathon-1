@@ -43,6 +43,34 @@ MonoBehaviour:
     m_StrikethroughThickness: 4.5
     m_TabWidth: 19
   m_GlyphTable:
+  - m_Index: 70
+    m_Metrics:
+      m_Width: 46.34375
+      m_Height: 50.671875
+      m_HorizontalBearingX: 5.671875
+      m_HorizontalBearingY: 50.671875
+      m_HorizontalAdvance: 53.1875
+    m_GlyphRect:
+      m_X: 10
+      m_Y: 42
+      m_Width: 48
+      m_Height: 51
+    m_Scale: 1
+    m_AtlasIndex: 0
+  - m_Index: 84
+    m_Metrics:
+      m_Width: 51.03125
+      m_Height: 52.828125
+      m_HorizontalBearingX: 1.4375
+      m_HorizontalBearingY: 51.5625
+      m_HorizontalAdvance: 55.34375
+    m_GlyphRect:
+      m_X: 147
+      m_Y: 10
+      m_Width: 52
+      m_Height: 54
+    m_Scale: 1
+    m_AtlasIndex: 0
   - m_Index: 427
     m_Metrics:
       m_Width: 51.75
@@ -71,50 +99,22 @@ MonoBehaviour:
       m_Height: 8
     m_Scale: 1
     m_AtlasIndex: 0
-  - m_Index: 84
-    m_Metrics:
-      m_Width: 51.03125
-      m_Height: 52.828125
-      m_HorizontalBearingX: 1.4375
-      m_HorizontalBearingY: 51.5625
-      m_HorizontalAdvance: 55.34375
-    m_GlyphRect:
-      m_X: 147
-      m_Y: 10
-      m_Width: 52
-      m_Height: 54
-    m_Scale: 1
-    m_AtlasIndex: 0
-  - m_Index: 70
-    m_Metrics:
-      m_Width: 46.34375
-      m_Height: 50.671875
-      m_HorizontalBearingX: 5.671875
-      m_HorizontalBearingY: 50.671875
-      m_HorizontalAdvance: 53.1875
-    m_GlyphRect:
-      m_X: 10
-      m_Y: 42
-      m_Width: 48
-      m_Height: 51
-    m_Scale: 1
-    m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
-    m_Unicode: 8230
-    m_GlyphIndex: 427
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 95
-    m_GlyphIndex: 456
+    m_Unicode: 75
+    m_GlyphIndex: 70
     m_Scale: 1
   - m_ElementType: 1
     m_Unicode: 79
     m_GlyphIndex: 84
     m_Scale: 1
   - m_ElementType: 1
-    m_Unicode: 75
-    m_GlyphIndex: 70
+    m_Unicode: 95
+    m_GlyphIndex: 456
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 8230
+    m_GlyphIndex: 427
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 7442237044116570473}
