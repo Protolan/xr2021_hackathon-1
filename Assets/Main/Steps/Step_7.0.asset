@@ -21,7 +21,7 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 656234895f8c67147a12957831316fbb, type: 2}
   - _nextStep: {fileID: 11400000, guid: ee5ec4c260d9ab04195ca3a18c39d12b, type: 2}
     _condition: {fileID: 11400000, guid: d960a11165669d448a89dbeccc194704, type: 2}
-  _features: 02000000050000000400000001000000
+  _features: 020000000500000004000000010000000a000000
   _modularMenuData:
     _mainText: 'You can ask me tips about: <b><u> Wool Cotton Jeans Sneakers </b></u>'
     _imageText: 

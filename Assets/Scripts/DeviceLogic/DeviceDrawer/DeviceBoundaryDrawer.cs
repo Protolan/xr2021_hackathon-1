@@ -65,10 +65,12 @@ namespace DeviceLogic
         
             _data._washingMachine.gameObject.SetActive(false);
             _userInput.ONButtonDown += StartDrawing;
+            _onConfirmButtonPressed.AddAction(CheckSettingHeight);
         }
         
         private void StartDrawing()
         {
+            if(_buttonSelected) return;
             _currentBehaviour = new DrawingBoundariesBehaviour(_boundaryObject, _drawingPoint, _data._scales);
             _userInput.ONButtonDown -= StartDrawing;
             _userInput.ONButtonUp += StopDrawing;
@@ -76,6 +78,7 @@ namespace DeviceLogic
 
         private void StopDrawing()
         {
+            if(_buttonSelected) return;
             _currentBehaviour = null;
             _userInput.ONButtonDown += StartDrawing;
             _userInput.ONButtonUp -= StopDrawing;
@@ -84,6 +87,9 @@ namespace DeviceLogic
         private void CheckSettingHeight()
         {
             _currentBehaviour = null;
+            _userInput.ONButtonUp -= StopDrawing;
+            _userInput.ONButtonDown -= StartDrawing;
+            _onConfirmButtonPressed.RemoveAction(CheckSettingHeight);
             _onConfirmButtonPressed.AddAction(SetDevice);
             _userInput.ONButtonUp -= CheckSettingHeight;
             _userInput.ONButtonDown += StartSettingHeight;

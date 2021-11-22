@@ -19,7 +19,7 @@ MonoBehaviour:
     _condition: {fileID: 11400000, guid: 46953adfa1c4fe447b834ba025c378fa, type: 2}
   - _nextStep: {fileID: 11400000, guid: 2d4ef7dd249aba84aa6b78384ce25ec5, type: 2}
     _condition: {fileID: 11400000, guid: 6c1bff03f1bf4504481e33cebbcd368a, type: 2}
-  _features: 01000000050000000400000002000000
+  _features: 010000000500000004000000020000000b000000
   _modularMenuData:
     _mainText: You can ask me about:<br> <b><u>starting guide<br> laundry tips<br>
       troubleshooting</b></u><br>

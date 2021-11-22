@@ -16,7 +16,8 @@ namespace DeviceLogic.DeviceDrawer
 
         private void Deactivate(Step step)
         {
-            if (step == _stepToDeactivate) gameObject.SetActive(false);
+            if (step.ContainsFeature(StepFeature.DeactivateScanPanel)) 
+                gameObject.SetActive(false);
         }
     }
 }

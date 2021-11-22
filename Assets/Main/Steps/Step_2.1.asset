@@ -15,7 +15,7 @@ MonoBehaviour:
   _transitions:
   - _nextStep: {fileID: 11400000, guid: b71847cd4d243f54fa9e5934de1fbdff, type: 2}
     _condition: {fileID: 11400000, guid: 9ad2f078dd91dd84aaea31d8b3ac58c9, type: 2}
-  _features: 0200000004000000
+  _features: 02000000040000000a000000
   _modularMenuData:
     _mainText: Okay! Let's go through the control panel first.
     _imageText: 

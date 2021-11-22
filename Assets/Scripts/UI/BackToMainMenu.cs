@@ -8,15 +8,20 @@ namespace UI
     public class BackToMainMenu : MonoBehaviour
     {
         [SerializeField] private StepGameEvent _onStepChanged;
-        [SerializeField] private GameEvent _onActivate;
+        
         [SerializeField] private Step _mainMenuStep;
+        private bool _isActive;
 
-        private bool _isActive = false;
 
-        private void OnEnable() => _onActivate.AddAction(Activate);
-        private void OnDisable() => _onActivate.RemoveAction(Activate);
-        private void Activate() => _isActive = true;
+        private void OnEnable() => _onStepChanged.AddAction(CheckForActivation);
 
+        private void OnDisable() => _onStepChanged.RemoveAction(CheckForActivation);
+
+        private void CheckForActivation(Step step)
+        {
+            if (step.ContainsFeature(StepFeature.EnableMainMenu)) 
+                _isActive = true;
+        }
 
         private void Update()
         {
